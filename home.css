@@ -115,12 +115,12 @@ a {
     }
     
     a {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     #research {
         top: -3em;
-        left: -3em;
+        left: -2em;
     }
 
     #design {
@@ -129,6 +129,6 @@ a {
 
     #contact {
         top: -3em;
-        left: 4em;
+        left: 3em;
     }
 }
