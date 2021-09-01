@@ -73,7 +73,8 @@ a {
 
 #research:hover {
     background: #FF310E;
-    color: #FFFFF0;
+    color: #fdfff5;
+    transition: 0.5s;
 }
 
 #design {
@@ -88,7 +89,8 @@ a {
 
 #design:hover {
     background: #FF310E;
-    color: #FFFFF0;
+    color: #fdfff5;
+    transition: 0.5s;
 }
 
 #contact {
@@ -103,5 +105,30 @@ a {
 
 #contact:hover {
     background: #FF310E;
-    color: #FFFFF0;
+    color: #fdfff5;
+    transition: 0.5s;
+}
+
+@media (max-width: 600px){
+    #name {
+        font-size: 3em;
+    }
+    
+    a {
+        font-size: 0.8em;
+    }
+
+    #research {
+        top: -3em;
+        left: -3em;
+    }
+
+    #design {
+        top: 0.8em;
+    }
+
+    #contact {
+        top: -3em;
+        left: 4em;
+    }
 }
