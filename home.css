@@ -11,13 +11,17 @@ body {
 }
 
 .w3-button {
-    padding:22px 25px !important;
+    /* padding:22px 25px !important; */
     font-family: 'Dosis', sans-serif;
     font-size: 1.8rem;
 }
 
+.button {
+    padding:22px 25px !important;
+}
+
 .button:hover {
-    border-bottom: 5px solid #333 !important;
+    border-bottom: 3px solid #333 !important;
 }
 
 .small_button {
@@ -53,13 +57,41 @@ body {
     background-color: #F4F4F4;
 }
 
+.cute {
+    border: 2px solid #ccc !important;
+    font-size: 0.9rem !important;
+    padding: 4px 10px !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.cute:hover {
+    color: #fdfff5;
+    background-color: #FF530D;
+    border: none !important;
+}
+
+
+button {
+    border: 2px solid #ccc !important;
+    font-size: 0.9rem !important;
+    padding: 4px 10px !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+button:hover {
+    color: #fdfff5;
+    background-color: #FF530D;
+    border: none !important;
+}
+
 .header {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.w3-card {
-    text-align: center;
+img {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer {
