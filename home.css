@@ -4,131 +4,116 @@ body {
     line-height: 1.5;
     font-size: 2em;
     text-align: center;
-    background-color: #fdfff5;
+    /* background-color: #fdfff5; */
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
     overflow-y: hidden;
 }
 
+.w3-button {
+    padding:22px 25px !important;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.8rem;
+}
+
+.button:hover {
+    border-bottom: 5px solid #333 !important;
+}
+
+.small_button {
+    font-family: 'Koh Santepheap', cursive;
+    font-size: 1.1rem;
+}
+
 #name {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    font-size: 6em;
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 6rem;
+}
+
+#interest {
+    font-family: 'Koh Santepheap', cursive;
+    font-size: 1.3rem;
+    color: #FF530D;
+}
+
+.self-intro {
+    margin-top: 25px;
+    padding: 30px 40px;
+    font-family: 'Koh Santepheap', cursive;
+    font-size: 1.2rem;
+}
+
+.sub {
+    padding: 25px 30px;
+    font-family: 'Koh Santepheap', cursive;
+    font-size: 1.2rem;
+}
+
+.sub:nth-child(odd) {
+    background-color: #F4F4F4;
+}
+
+.header {
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
-#name_1 {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.w3-card {
+    text-align: center;
 }
 
-#name_2 {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#separator {
-    content: '';
-    position: absolute;
-    background: #333;
-    width: 0.1px;
-    height: 0.1px;
-    border-radius: 2px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-ul {
+.footer {
+    text-decoration: none; 
     list-style: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-a {
-    text-decoration: none;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-style: italic;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px 10px;
+    font-family: 'Open Sans', sans-serif;
     color: #333;
-    font-size: 1.5em;
-    font-weight: 500;
+    font-size: 1rem;
 }
 
-#research {
-    position: absolute;
-    top: -2em;
-    left: -5em;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    /* -webkit-transform-origin: center;
-    transform-origin: center; */
+.footer li {
+	margin-left: 0.4em;
 }
 
-#research:hover {
-    background: #FF310E;
-    color: #fdfff5;
+.footer li a .fa {
+	font-size: 2.2rem;
+    color: #7A7A7B;
+}
+
+.footer li:nth-child(2) a .fa:hover {
+	content: 'f09b';
+	color: #333;
     transition: 0.5s;
+    cursor: pointer;
 }
 
-#design {
-    position: absolute;
-    top: 1em;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    /* -webkit-transform-origin: center;
-    transform-origin: center; */
-}
-
-#design:hover {
-    background: #FF310E;
-    color: #fdfff5;
+.footer li:nth-child(3) a .fa:hover {
+	content: 'f0e1';
+	color: #0e76a8;
     transition: 0.5s;
+    cursor: pointer;
 }
 
-#contact {
-    position: absolute;
-    top: -2em;
-    left: 6em;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    /* -webkit-transform-origin: center;
-    transform-origin: center; */
-}
-
-#contact:hover {
-    background: #FF310E;
-    color: #fdfff5;
+.footer li:nth-child(4) a .fa:hover {
+	content: 'f1b4';
+	color: #053eff;
     transition: 0.5s;
+    cursor: pointer;
 }
 
-@media (max-width: 600px){
-    #name {
-        font-size: 3em;
-    }
-    
-    a {
-        font-size: 0.7em;
-    }
+@media (max-width:600px) {
+    .w3-button {font-size: 1.2rem;}
 
-    #research {
-        top: -3em;
-        left: -2em;
-    }
+    .small_button {font-size: 1rem;}
 
-    #design {
-        top: 0.8em;
-    }
+    #name {font-size: 4rem;}
 
-    #contact {
-        top: -3em;
-        left: 4em;
-    }
+    #interest {font-size: 1rem;}
+
+    .header {font-size: 1.1rem}
+
+    .sub {font-size: 1rem;}
 }
