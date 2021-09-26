@@ -57,6 +57,10 @@ body {
     background-color: #F4F4F4;
 }
 
+.sub-sub {
+    font-size:1.1rem;
+}
+
 .cute {
     border: 2px solid #ccc !important;
     font-size: 0.9rem !important;
@@ -137,15 +141,23 @@ img {
 }
 
 @media (max-width:600px) {
-    .w3-button {font-size: 1.2rem;}
+    .w3-button {font-size: 1.1rem;}
 
-    .small_button {font-size: 1rem;}
+    .small_button {font-size: 0.7rem;}
 
     #name {font-size: 4rem;}
 
     #interest {font-size: 1rem;}
 
-    .header {font-size: 1.1rem}
+    #intro {font-size: 1rem;}
 
-    .sub {font-size: 1rem;}
+    .header {font-size: 1rem}
+
+    .sub {font-size: 0.8rem;}
+
+    .sub-sub {font-size: 0.7rem;}
+
+    /* button {font-size: 0.7rem;} unfortunately !important override @media */
+
+    .footer {font-size: 0.9rem;}
 }
