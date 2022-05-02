@@ -198,9 +198,17 @@ img {
 }
 
 @media (max-width:600px) {
-    .w3-button {font-size: 1.1rem;}
+    #self-intro {padding: 15px 30px}
 
-    #interest {font-size: 1rem;}
+    #background {padding: 15px 30px}
+
+    #projects {padding: 15px 30px}
+
+    #publications {padding: 15px 30px}
+    
+    #posters {padding: 15px 30px}
+    
+    .w3-button {font-size: 1.1rem;}
 
     #intro {font-size: 1rem;}
 
