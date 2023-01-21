@@ -52,6 +52,10 @@ body {
     padding: 50px 100px;
 }
 
+#award {
+    padding: 50px 100px;
+}
+
 #grants_n_fellowship {
     padding: 50px 100px;
 }
@@ -218,6 +222,8 @@ img {
     #research {padding: 15px 30px}
 
     #publications {padding: 15px 30px}
+
+    #award {padding: 15px 30px}
 
     #grants_n_fellowship {padding: 15px 30px}
     
