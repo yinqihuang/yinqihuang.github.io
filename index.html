@@ -313,4 +313,17 @@
         <li><a href="https://www.linkedin.com/in/yinqi-huang/"><i class="fa fa-linkedin w3-large" aria-hidden="true"></i></a></li>
         <li><a href="https://www.behance.net/yinqihuang"><i class="fa fa-behance w3-large" aria-hidden="true"></i></a></li>
     </ul>
+    
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-150px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
