@@ -7,6 +7,7 @@
     <meta name="keywords" content="psychology, neuroscience, cognitive, machine learning, deep learning, computational models, memory, episodic memory, spatial memory, naturalistic, virtual reality">
     <title>Yinqi Huang</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="home.js">
     
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&family=Raleway:wght@200;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <!-- w3 style -->
-    <link rel="stylesheet" href="assets/w3.css">
+    <link rel="stylesheet" href="w3.css">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -22,8 +23,25 @@
 </head>
 
 <!-- <a href="https://www.sciencedirect.com/science/article/pii/S0896627319306968"><img src="cover.png" alt="Spatial navigation photo" style="width: 100%;"></a> -->
-  
-<ul id="navbar">
+ 
+<div id="menuToggle">
+    <!-- hamburger -->
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+        <li style="float:left"><a href="#self-intro">Home</a></li>
+        <li style="float:left"><a href="#publications">Publications</a></li>
+        <li style="float:left"><a href="#teaching">Teaching</a></li>
+        <li style="float:left"><a href="#research">Research</a></li>
+        <li style="float:left"><a href="https://yinqi-h.gitbook.io/ml-models/models">Notebook</a></li>
+        <li style="float:left"><a href="https://www.behance.net/yinqihuang">Portfolio</a></li>
+   </ul>
+</div> 
+
+<ul id="navbar"> 
     <li style="color:#333;"><a href="#self-intro">Yinqi Huang</a></li>
     <li style="float:right"><a class="active" href="https://www.behance.net/yinqihuang">Portfolio</a></li>
     <li style="float:right"><a class="active" href="https://yinqi-h.gitbook.io/ml-models/models">Notebook</a></li>
@@ -126,6 +144,18 @@
                 </table>
             </div>
     </div>
+
+    <!-- <div class="w3-container" id="current_project">
+        <span class="w3-container" style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 2em;">Current Project: Spatial Navigation</span>
+        <div id="robot">
+            <div class="head"></div>
+            <div class="arm l"><div><div></div></div></div>
+            <div class="leg l"><div><div></div></div></div>
+            <div class="leg r"><div><div></div></div></div>
+            <div class="arm r"><div><div></div></div></div>
+        </div>
+        <div class="shadow"></div>
+    </div> -->
 
     <div class="w3-container" id="research">
         <span class="w3-container" style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 2em;">Research</span>
@@ -313,7 +343,7 @@
         <li><a href="https://www.linkedin.com/in/yinqi-huang/"><i class="fa fa-linkedin w3-large" aria-hidden="true"></i></a></li>
         <li><a href="https://www.behance.net/yinqihuang"><i class="fa fa-behance w3-large" aria-hidden="true"></i></a></li>
     </ul>
-    
+
     <script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
@@ -325,5 +355,6 @@
           }
           prevScrollpos = currentScrollPos;
         }
+
     </script>
 </body>
