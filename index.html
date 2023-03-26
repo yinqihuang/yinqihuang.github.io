@@ -13,17 +13,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&family=Raleway:wght@200;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <!-- w3 style -->
     <link rel="stylesheet" href="assets/w3.css">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/f5ea91e308.js"></script>
+
+    <!-- footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     
 </head>
 
-<!-- <a href="https://www.sciencedirect.com/science/article/pii/S0896627319306968"><img src="cover.png" alt="Spatial navigation photo" style="width: 100%;"></a> -->
- 
 <div id="menuToggle">
     <!-- hamburger -->
     <input type="checkbox" />
@@ -145,102 +150,100 @@
             </div>
     </div>
 
-    <!-- <div class="w3-container" id="current_project">
-        <span class="w3-container" style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 2em;">Current Project: Spatial Navigation</span>
-        <div id="robot">
-            <div class="head"></div>
-            <div class="arm l"><div><div></div></div></div>
-            <div class="leg l"><div><div></div></div></div>
-            <div class="leg r"><div><div></div></div></div>
-            <div class="arm r"><div><div></div></div></div>
-        </div>
-        <div class="shadow"></div>
-    </div> -->
 
     <div class="w3-container" id="research">
-        <span class="w3-container" style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 2em;">Research</span>
-        <span class="table-list">
-                <table class="w3-table w3-striped">
-                    <tr>
-                        <th></th>
-                        <th class="header">Topics</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    
-                    <tr>
-                        <td><img src="assets/virtual_navigation.png" alt="Virtual Reality Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                        <td><span class="hashtag"># cognitive psychology;</span> <span class="hashtag"># spatial navigation</span></td>
-                        <td>Computational Modeling of Path Integration and Landmark Navigation Using Immersive Virtual Reality <div class="table-list-sub"><b>Funder:</b> University of Arizona Research and Project (ReaP) Grant </div> <div class="table-list-sub"><b>Advisors:</b> Dr. Arne Ekstrom and Dr. Robert Wilson</div></td>
-                        <td>Aug 2022 - Present</td>
-                    </tr>
+        <span class="w3-container" style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 2em;">Featured Research Projects</span>
+        <!-- card -->
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="assets/virtual_navigation.png" alt="Virtual Reality Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;">
+                    <div class="container">
+                    <h4><b>Modeling Path Integration and Landmark Navigation in Virtual Reality</b></h4>
+                    <p><b>Funder:</b> University of Arizona Research and Project (ReaP) Grant</p>
+                    <p><b>Advisors:</b> Dr. Arne Ekstrom and Dr. Robert Wilson</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="card">
+                    <img src="assets/development.png" alt="Children Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;">
+                    <div class="container">
+                    <h4><b>Tracking Developmental Milestones Over Time with Bayesian and Recurrent Neural Networks</b></h4>
+                    <p><b>Funders:</b> National Research Council of Canada Industrial Research Assistance Program (NRC IRAP), Scientific Research and Experimental Development Federal Program (SR&ED)</p>
+                    <p><b>Company:</b> iBlüm Learning Company</p>
+                    <a href="https://yinqi-h.gitbook.io/ml-models/models/knowledge-tracing-models" class="w3-button w3-round-large w3-border cute">REVIEW</a>
+                    </div>
+                </div>
+            </div>
 
-                    <tr> 
-                        <td><img src="assets/development.png" alt="Children Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                        <td><span class="hashtag"># developmental psychology;</span> <span class="hashtag"># meachine learning</span></td>
-                        <td>Tracing Knowledge Mastery Through Time (Bayesian, Recurrent Neural Networks) <div class="table-list-sub"><b>Funders:</b> National Research Council of Canada Industrial Research Assistance Program (NRC IRAP), Scientific Research and Experimental Development Federal Program (SR&ED)</div> <div class="table-list-sub"><b>Company:</b> iBlüm Learning Company</div> <a href="https://yinqi-h.gitbook.io/ml-models/models/knowledge-tracing-models" class="w3-button w3-round-large w3-border cute">REVIEW</a></td>
-                        <td>Jun 2020 - Jul 2022</td>
-                    </tr>
+            <div class="column">
+                <div class="card">
+                    <img src="assets/protein.png" alt="Protein Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;">
+                    <div class="container">
+                    <h4><b>Designing Plastic-Degrading Enzymes using Multilayer Perceptron and Transfer Learning</b></h4>
+                    <p><b>Funders:</b> University of Toronto, Cell & Systems Biology Department, Faculty of Medicine, Human Biology, Laboratory Medicine and Pathobiology</p>
+                    <p><b>Group:</b> iGEM Toronto</p>
+                    <a href="https://colab.research.google.com/drive/1HLbzq5HCrxI2LJ8cKtZL6_IOpMbQWpLO?usp=sharing" class="w3-button w3-round-large w3-border cute">CODE</a>
+                    <a href="https://2019.igem.org/Team:Toronto" class="w3-button w3-round-large w3-border cute">WEBSITE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    <tr> 
-                        <td><img src="assets/protein.png" alt="Protein Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                        <td><span class="hashtag"># synthetic biology;</span> <span class="hashtag"># meachine learning</span></td>
-                        <td>Plastic-degrading Enzymes Design (Multilayer Perceptron, Transfer Learning) <div class="table-list-sub"><b>Funders:</b> University of Toronto, Cell & Systems Biology Department, Faculty of Medicine, Human Biology, Laboratory Medicine and Pathobiology</div> <div class="table-list-sub"><b>Group:</b> iGEM Toronto</div> <a href="https://colab.research.google.com/drive/1HLbzq5HCrxI2LJ8cKtZL6_IOpMbQWpLO?usp=sharing" class="w3-button w3-round-large w3-border cute">CODE</a> <a href="https://2019.igem.org/Team:Toronto" class="w3-button w3-round-large w3-border cute">WEBSITE</a></td>
-                        <td>Nov 2018 - May 2022</td>
-                    </tr>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="assets/time.png" alt="Clock Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;">
+                    <div class="container">
+                    <h4><b>Temporal Distance & Event Boundaries Affect Recall Richness</b></h4>
+                    <p><b>Funder:</b> Natural Sciences and Engineering Research Council of Canada (NSERC)</p>
+                    <p><b>Advisors:</b> Dr. Morgan Barense and Dr. Bryan Hong</p>
+                    <a href="https://docs.google.com/presentation/d/1fJDR16a2Z3s5X7JZtdUlH8qQe-5SjKye/edit?usp=sharing&ouid=105241595140734256813&rtpof=true&sd=true" class="w3-button w3-round-large w3-border cute">SLIDES</a> 
+                    <a href="https://drive.google.com/file/d/1evNwjzXrLMWbc7vlZwrFxz0LD5B2G09j/view?usp=sharing" class="w3-button w3-round-large w3-border cute">POSTER</a>
+                    <a href="https://github.com/yinqihuang/gump" class="w3-button w3-round-large w3-border cute">CODE</a>
+                    </div>
+                </div>
+            </div>
 
-                    <tr>
-                        <td><img src="assets/time.png" alt="Clock Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                        <td><span class="hashtag"># cognitive psychology;</span> <span class="hashtag"># episodic memory</span></td>
-                        <td>Temporal Distance & Event Boundaries Affect Recall Richness <div class="table-list-sub"><b>Funder:</b> Natural Sciences and Engineering Research Council of Canada (NSERC)</div> <div class="table-list-sub"><b>Advisors:</b> Dr. Morgan Barense and Dr. Bryan Hong</div> <a href="https://docs.google.com/presentation/d/1fJDR16a2Z3s5X7JZtdUlH8qQe-5SjKye/edit?usp=sharing&ouid=105241595140734256813&rtpof=true&sd=true" class="w3-button w3-round-large w3-border cute">SLIDES</a> <a href="https://drive.google.com/file/d/1evNwjzXrLMWbc7vlZwrFxz0LD5B2G09j/view?usp=sharing" class="w3-button w3-round-large w3-border cute">POSTER</a> <a href="https://github.com/yinqihuang/gump" class="w3-button w3-round-large w3-border cute">CODE</a></td>
-                        <td>Sep 2019 - Dec 2020</td>
-                    </tr>
-                    
-                    <tr>
-                        <td><img src="assets/phone.png" alt="Phone Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                        <td><span class="hashtag"># organizational psychology;</span></td>
-                        <td>Using Phone to Cope With Stressors at the Workplace and at Home<div class="table-list-sub"><b>Supervisors:</b> Dr. Soo Min Toh, Dr. Xian Zhao</div> <a href="https://drive.google.com/file/d/1Rg8mQ0ZAEKdFkVPo6fUEygA7MrbkhDDz/view?usp=sharing" class="w3-button w3-round-large w3-border cute">POSTER</a></td>
-                        <td>May - Aug 2019</td>
-                    </tr>
-                        
-                    <tr>
-                        <td><img src="assets/conversation.png" alt="Social Interaction Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                        <td><span class="hashtag"># social psychology;</span> <span class="hashtag"># intergroup contact</span></td>
-                        <td>Experimenter's Gender Affect Retrieval of Implicit & Explicit Attitudes <div class="table-list-sub"><b>Advisor:</b> Dr. Elizabeth Page-Gould</div> <a href="https://osf.io/rsnjc/" class="w3-button w3-round-large w3-border cute">SLIDES</a>  <a href="https://osf.io/2urmd/" class="w3-button w3-round-large w3-border cute">PAPER</a> <a href="https://osf.io/awqzy/" class="w3-button w3-round-large w3-border cute">CODE</a> <a href="https://osf.io/kpqae/" class="w3-button w3-round-large w3-border cute">DATA</a></td>
-                        <td>Mar 2017 - Apr 2019</td>
-                    </tr>
-                </table>
-        </span>
-    </div>
+            <div class="column">
+                <div class="card">
+                    <img src="assets/phone.png" alt="Phone Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;">
+                    <div class="container">
+                    <h4><b>Managing Workplace and Home Stressors with Your Phone</b></h4>
+                    <p><b>Supervisors:</b> Dr. Soo Min Toh, Dr. Xian Zhao</p>
+                    <a href="https://drive.google.com/file/d/1Rg8mQ0ZAEKdFkVPo6fUEygA7MrbkhDDz/view?usp=sharing" class="w3-button w3-round-large w3-border cute">POSTER</a>
+                    </div>
+                </div>
+            </div>
 
-    <div class="w3-container" id="award">
-        <span class="w3-container" style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 2em;">Award</span>
-        <span class="table-list">
-            <table class="w3-table w3-striped">
-                <tr>
-                    <td><img src="assets/lecturer.png" alt="Lecturer Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td style="vertical-align: middle;">Best Presentation Award, Years 1-2 <div class="table-list-sub">7th Annual Psychology Graduate Student and Post-doc Data Blitz, University of Arizona</div></td>
-                    <td style="vertical-align: middle;">2022</td>
-                </tr>
-            </table>
-        </span>
-    </div>
-    
-    <div class="w3-container" id="grants_n_fellowship">
-        <span class="w3-container" style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 2em;">Grant</span>
-        <span class="table-list">
-            <table class="w3-table w3-striped">
-                <tr>
-                    <td><img src="assets/virtual_navigation.png" alt="Virtual Reality Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td>University of Arizona Research and Project (ReaP) Grant <div class="table-list-sub">Computational Modeling of Path Integration and Landmark Navigation Using Immersive Virtual Reality</div> </td>
-                    <td>Nov 2022 - Nov 2023</td>
-                </tr>
+            <div class="column">
+                <div class="card">
+                    <img src="assets/conversation.png" alt="Conversation Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;">
+                    <div class="container">
+                    <h4><b>Impact of Experimenter Gender on Retrieval of Implicit and Explicit Attitudes</b></h4>
+                    <p><b>Advisor:</b> Dr. Elizabeth Page-Gould</p>
+                    <a href="https://osf.io/rsnjc/" class="w3-button w3-round-large w3-border cute">SLIDES</a>
+                    <a href="https://psyarxiv.com/sqny7/" class="w3-button w3-round-large w3-border cute">PAPER</a>
+                    <a href="https://osf.io/awqzy/" class="w3-button w3-round-large w3-border cute">CODE</a>
+                    <a href="https://osf.io/kpqae/" class="w3-button w3-round-large w3-border cute">DATA</a>
+                    </div>
+                </div>
+            </div>
 
-                
-            </table>
-        </span>
-    </div>
-       
+            <!-- <div class="column">
+                <div class="card">
+                  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                  <h4><b>John Doe</b></h4>
+                  <p>Architect & Engineer</p>
+                  </div>
+                </div>
+            </div> -->
+        </div>
+    </div> 
+
     <div class="w3-container" id="publications">
         <span class="w3-container" style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 2em;">Publications</span>
         <span class="table-list">
@@ -259,7 +262,6 @@
             </table>
         </span>
     </div>
-
 
     <div class="w3-container" id="posters">
         <span class="w3-container" style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 2em;">Posters</span>
@@ -292,7 +294,7 @@
             <table class="w3-table w3-striped">
                 <tr>
                     <td><img src="assets/walking.png" alt="Walking Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td style="vertical-align: middle;">Course: Vestibular System [50 students]<div class="table-list-sub">Guest Lecturer</div></td>
+                    <td style="vertical-align: middle;">Course: Vestibular System [20 students]<div class="table-list-sub">Guest Lecturer</div></td>
                     <td style="vertical-align: middle;">2023 Spring</td>
                 </tr>
 
@@ -313,43 +315,93 @@
     </div>
 
     <div class="w3-container" id="service_and_membership">
-            <div class="w3-twothird w3-container">
-                <div style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 1.6em;">Service and Outreach</div>
-                <table class="w3-table w3-striped">
-                    <tr>
-                        <td><img src="assets/committee.png" alt="Face Recognition Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                        <td style="vertical-align: middle;">Graduate Representative <div class="table-list-sub">Psychology, University of Arizona</div></td>
-                        <td style="vertical-align: middle;">2022 - 2024</td>
-                    </tr>
+        <div class="w3-twothird w3-container">
+            <div style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 1.6em;">Service and Outreach</div>
+            <table class="w3-table w3-striped">
+                <tr>
+                    <td><img src="assets/committee.png" alt="Face Recognition Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
+                    <td style="vertical-align: middle;">Graduate Representative <div class="table-list-sub">Psychology, University of Arizona</div></td>
+                    <td style="vertical-align: middle;">2022 - 2024</td>
+                </tr>
 
-                    <!-- <tr>
-                        <td><img src="assets/lecturer.png" alt="Face Recognition Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                        <td style="vertical-align: middle;">Psychology Lecturer on Vestibular System<div class="table-list-sub"><a href="https://olli.arizona.edu/">Osher Lifelong Learning Institute</a>, University of Arizona</div></td>
-                        <td style="vertical-align: middle;">2023 Spring</td>
-                    </tr> -->
-    
-                </table>
-            </div>
-            
-            <div class="w3-third w3-container">
-                <div style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 1.6em;">Membership</div>
-                <table class="w3-table w3-striped">
-                    <tr>
-                        <td><img src="assets/SfN.jpeg" alt="SfN Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                        <td style="vertical-align: middle;">Society for Neuroscience </td>
-                    </tr>
-                </table>
-            </div>
-    </div>
+                <!-- <tr>
+                    <td><img src="assets/lecturer.png" alt="Face Recognition Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
+                    <td style="vertical-align: middle;">Psychology Lecturer on Vestibular System<div class="table-list-sub"><a href="https://olli.arizona.edu/">Osher Lifelong Learning Institute</a>, University of Arizona</div></td>
+                    <td style="vertical-align: middle;">2023 Spring</td>
+                </tr> -->
 
-    <ul class="footer">
+            </table>
+        </div>
+        
+        <div class="w3-third w3-container">
+            <div style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 1.6em;">Membership</div>
+            <table class="w3-table w3-striped">
+                <tr>
+                    <td><img src="assets/SfN.jpeg" alt="SfN Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
+                    <td style="vertical-align: middle;">Society for Neuroscience </td>
+                </tr>
+            </table>
+        </div>
+</div>
+
+    <!-- <ul class="footer">
         <div id="credits"> Website designed by Yinqi Huang (2022), icons from <a href="https://www.flaticon.com/">Flaticon</a> | <i><a href="mailto:yinqi@arizona.edu">EMAIL</a></i> </div>
         <li><a href="https://twitter.com/yinqi_huang"><i class="fa fa-twitter w3-large" aria-hidden="true"></i></a></li>
         <li><a href="https://github.com/yinqihuang"><i class="fa fa-github w3-large" aria-hidden="true"></i></a></li>
         <li><a href="https://www.linkedin.com/in/yinqi-huang/"><i class="fa fa-linkedin w3-large" aria-hidden="true"></i></a></li>
         <li><a href="https://www.behance.net/yinqihuang"><i class="fa fa-behance w3-large" aria-hidden="true"></i></a></li>
-    </ul>
+    </ul> -->
 
+
+    <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                            <p>I study decision making in spatial navigation!</p>
+                            <a href="mailto:yinqi@arizona.edu?subject=From%20Website" class="btn btn_get btn_get_two">Email Me</a>
+                            
+                            <!-- if you want a subscribe form -->
+                            <!-- <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                <p class="mchimp-errmessage" style="display: none;"></p>
+                                <p class="mchimp-sucmessage" style="display: none;"></p>
+                            </form> -->
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Social Media</h3>
+                            <div class="f_social_icon">
+                                <a href="https://twitter.com/yinqi_huang"><i class="fa fa-twitter w3-large" aria-hidden="true"></i></a>
+                                <a href="https://github.com/yinqihuang"><i class="fa fa-github w3-large" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/yinqi-huang/"><i class="fa fa-linkedin w3-large" aria-hidden="true"></i></a>
+                                <a href="https://www.behance.net/yinqihuang"><i class="fa fa-behance w3-large" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <p>Website designed by Yinqi Huang (2023), icons from Flaticon, animation by <a href="https://codepen.io/uiswarup/pen/oNNMedZ" target="_blank">@uiswarup</a></p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
     <script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
