@@ -167,6 +167,10 @@ button:hover {
   font-weight: 700;
 }
 
+#girl {
+  height: 470px;
+}
+
 img {
   margin-left: auto;
   margin-right: auto;
@@ -478,6 +482,10 @@ color: #053eff;
   }
 
   #navbar {display: none;}
+
+  #girl {
+    display: none;
+  }
 }
 
 
