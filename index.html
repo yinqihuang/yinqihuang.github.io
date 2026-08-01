@@ -6,8 +6,9 @@
     <meta name="description" content="PhD Student in Cognitive Neuroscience, Virtual Navigation, Decision Making, Computation">
     <meta name="keywords" content="psychology, neuroscience, cognitive, machine learning, deep learning, computational models, memory, episodic memory, spatial memory, naturalistic, virtual reality">
     <title>Yinqi Huang</title>
+
     <link rel="stylesheet" href="home.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&family=Raleway:wght@200;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -17,387 +18,674 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/f5ea91e308.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 </head>
 
-<div id="menuToggle">
-    <input type="checkbox" />
-    <span></span>
-    <span></span>
-    <span></span>
-
-    <ul id="menu">
-        <li style="float:left"><a href="#self-intro">Home</a></li>
-        <li style="float:left"><a href="#publications">Publications</a></li>
-        <li style="float:left"><a href="#teaching">Teaching</a></li>
-        <li style="float:left"><a href="#research">Research</a></li>
-        <li style="float:left"><a href="https://yinqi-h.gitbook.io/ml-models/models">Notebook</a></li>
-        <li style="float:left"><a href="https://www.behance.net/yinqihuang">Portfolio</a></li>
-   </ul>
-</div> 
-
-<ul id="navbar"> 
-    <li style="color:#333;"><a href="#self-intro">Yinqi Huang</a></li>
-    <li style="float:right"><a class="active" href="https://www.behance.net/yinqihuang">Portfolio</a></li>
-    <li style="float:right"><a class="active" href="https://yinqi-h.gitbook.io/ml-models/models">Notebook</a></li>
-    <li style="float:right"><a class="active" href="#research">Research</a></li>
-    <li style="float:right"><a class="active" href="#teaching">Teaching</a></li>
-    <li style="float:right"><a class="active" href="#publications">Publications</a></li>
-</ul>  
-
 <body>
-    <div class="w3-container" id="self-intro">
-        <span class="w3-third w3-container" id="photo">
-            <img src="assets/yinqi.jpeg" alt="Yinqi's Photo" class="w3-circle" style="width:12rem; display:block; margin-top: 2rem; margin-bottom: 1rem;">
-            <div style="font-family: 'Montserrat', sans-serif; font-size: 2rem; text-align:center;">Yinqi Huang</div>
-            <div style="font-family:'Raleway',sans-serif; font-size:1.1rem; font-weight:200; text-align:center;">
-            PhD Candidate in Cognitive Neuroscience<br>
-            Perception and Action, Control Theory
-            </div>
-        </span>
 
-        <span class="w3-twothird w3-container" id="intro">
-            <p style="text-align:left; padding-bottom:nnex;">
-                My overarching goal is to study <b> cognition</b> in <b>naturalistic environments</b> using <b>computational models</b>. I am interested in how the brain generates predictions, detects mismatches, and updates behaviours. To investigate these processes, I use virtual reality (VR), mobile EEG, and motion data.
-            </p>
+    <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
 
-            <p style="text-align:left; padding-bottom:nnex;">
-                My current project focuses on the <b>multi-sensory integration</b> during <b>active navigation</b> in <b>virtual reality</b>, supervised by <a href="https://scholar.google.com/citations?user=4LxikSIAAAAJ&hl=en">Robert Wilson</a>. Read more about why VR is naturalistic in my paper in <a href="https://rdcu.be/dnUrW">Nature Reviews Psychology</a>.
-            </p>
-
-            <p style="text-align:left; padding-bottom:nnex;">
-                I also study how people learn to control robotic arms during <b>bimanual teleoperation</b> with the da Vinci Surgical System. This project uses optimal control theory to model learning dynamics in <b>motor learning</b> during <b>human–robot interaction</b>.
-            </p>
-
-            <p style="text-align:left; padding-bottom:nnex;">
-                Outside of the lab, I enjoy hiking and scuba diving. 
-            </p>
-        </span>
-
+        <ul id="menu">
+            <li><a href="#self-intro">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="https://yinqi-h.gitbook.io/ml-models/models">Notebook</a></li>
+            <li><a href="https://www.behance.net/yinqihuang">Portfolio</a></li>
+        </ul>
     </div>
 
-    <div class="w3-container" id="background">
-            <div class="w3-third w3-container">
-                <div style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 1.6em;">Research Interests</div>
-                <table>
-                    <tr>
-                        <th><img src="assets/reinforcement.png" alt="Machine Learning Cartoon" class="w3-image; w3-container" style="height:4rem; margin:16px 16px;"></th>
-                        <th>
-                            Control theory
-                        </th>
-                    </tr>
+    <ul id="navbar">
+        <li style="color:#333;"><a href="#self-intro">Yinqi Huang</a></li>
+        <li style="float:right"><a class="active" href="https://www.behance.net/yinqihuang">Portfolio</a></li>
+        <li style="float:right"><a class="active" href="https://yinqi-h.gitbook.io/ml-models/models">Notebook</a></li>
+        <li style="float:right"><a class="active" href="#teaching">Teaching</a></li>
+        <li style="float:right"><a class="active" href="#publications">Publications</a></li>
+        <li style="float:right"><a class="active" href="#news">News</a></li>
+    </ul>
 
-                    <tr>
-                        <th><img src="assets/vr.png" alt="Virtual Reality Cartoon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></th>
-                        <th>
-                            Virtual reality
-                        </th>
-                    </tr>
+    <div class="page-shell">
 
-                    <tr>
-                        <th><img src="assets/brain.png" alt="Human Brain Cartoon" class="w3-image; w3-container" style="height:4rem; margin:16px 16px;"></th>
-                        <th>
-                            Multi-sensory integration
-                        </th>
-                    </tr>
-                </table>
-        
+        <aside class="profile-column">
+            <div id="photo">
+                <img src="assets/yinqi.jpeg" alt="Yinqi's Photo" class="w3-circle" style="width:12rem; display:block; margin-top: 2rem; margin-bottom: 1rem;">
+                <div style="font-family: 'Montserrat', sans-serif; font-size: 1.6rem; text-align:center;">Yinqi Huang 黄茵琪</div>
+                <div style="font-family:'Raleway',sans-serif; font-size:1.1rem; font-weight:200; text-align:center;">
+                    PhD Candidate in Cognitive Neuroscience<br>
+                    Perception and Action, Control Theory
+                </div>
+
+                <div class="profile-socials" aria-label="Social links">
+                    <a href="https://scholar.google.com/citations?user=e88buogAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                    <a href="https://github.com/yinqihuang" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/yinqi-huang/" target="_blank">LinkedIn</a>
+                    <a href="https://x.com/yinqi_huang" target="_blank">X</a>
+                    <a href="https://bsky.app/profile/yinqihuang.bsky.social" target="_blank">Bluesky</a>
+                    <a href="assets/Huang_Yinqi_CV.pdf" target="_blank">CV</a>
+                </div>
             </div>
-            <div class="w3-twothird w3-container" >
-                <div style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 1.6em;">Education</div>
-                <table style="margin: 0 auto;">
-                    <tr>
-                        <th><img src="assets/gatech.svg" alt="Georgia Institute of Technology Logo" class="w3-image; w3-container" style="height:4rem; margin:16px 16px;"></th>
-                        <th>
-                            PhD in Psychology <br>
-                            Georgia Institute of Technology | 
-                            2024 - Present
-                        </th>
-                    </tr>
+        </aside>
 
-                    <tr>
-                        <th><img src="assets/ua.png" alt="iblum Logo" class="w3-image; w3-container" style="height:4rem; margin:16px 16px;"></th>
-                        <th>
-                            MA in Psychology <br>
-                            University of Arizona |
-                            2022 - 2024
-                        </th>
-                    </tr>
+        <main class="content-column">
 
-                    <tr>
-                        <th><img src="assets/uoft.png" alt="University of Toronto Logo" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></th>
-                        <th>
-                            Honours BSc in Psychology; Minor: Biology and Anthropology <br>
-                            University of Toronto |
-                            2016 - 2020    
-                        </th>
-                    </tr>
-                </table>
-            </div>
-    </div>
+            <div class="w3-container" id="self-intro">
+                <div id="intro">
+                    <p style="text-align:left; padding-bottom:1rem;">
+                        My overarching goal is to understand <b>cognition</b> in <b>naturalistic environments</b> using <b>computational models</b>. I focus on sensorimotor integration, examining how the brain generates predictions, detects prediction errors, and uses these errors to update behaviour. To investigate these processes, I combine <b>virtual reality</b>, <b>mobile EEG</b>, <b>motion tracking</b>, and <b>computational modeling</b>.
+                    </p>
 
-    <div id="research">
-        <div class="w3-container" style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 2em;">Featured Research Projects</div>
-        <div class="w3-row-padding w3-margin-top">
-            <div class="w3-col m4 s12">
-                <img id="girl" src="assets/girl.png" alt="Girl Scientist Icon" class="w3-image w3-container" style="height: 380px; display: block; margin: 0 auto;">       
+                    <p style="text-align:left; padding-bottom:1rem;">
+                        My dissertation focuses on <b>multisensory integration</b> during <b>naturalistic navigation</b> in <b>virtual reality</b>, under the supervision of <a href="https://scholar.google.com/citations?user=4LxikSIAAAAJ&hl=en">Bob Wilson</a>. This work investigates how people combine visual and body-based cues, and how they transform spatial estimates into actions as a <b>closed-loop control</b>. Read more in my review in <a href="https://rdcu.be/dnUrW"><em>Nature Reviews Psychology</em></a>, our paper in <a href="https://www.sciencedirect.com/science/article/pii/S0028393225002866"><em>Neuropsychologia</em></a>, and our recent preprint on <a href="https://www.biorxiv.org/content/10.64898/2026.06.02.729319v1" target="_blank" rel="noopener">bioRxiv</a>.
+                    </p>
+
+                    <p style="text-align:left; padding-bottom:1rem;">
+                        I also study how people learn to control robotic arms during <b>teleoperation</b> with the da Vinci Surgical System. This project uses <b>control theory</b> to model <b>motor skill learning</b> in <b>human–robot interaction</b>. Read more in our work in <a href="https://doi.org/10.1038/s41539-026-00442-6" target="_blank" rel="noopener"><em>npj Science of Learning</em></a>.
+                    </p>
+
+                    <p style="text-align:left; padding-bottom:1rem;">
+                        My work has been recognized by the Link Fellowship Honorable Mention, the University of Arizona Outstanding Research Award in Cognitive Science, and the Society for Neuroscience Trainee Professional Development Award. My research has been supported by the University of Arizona Research and Project (ReaP) Grant, the SensorLab Seed Grant, and the OpenAI Researcher Access Program.
+                    </p>
+                </div>
             </div>
 
-            <div class="w3-col m4 s12">
-                <div class="card">
-                    <img src="assets/vr_2.png" alt="Virtual Reality Icon" class="w3-image w3-container" style="height:180px; display:block; margin:0 auto;">
-                    <div class="container">
-                        <h4><b>Multi-sensory Integration in Virtual Reality Navigation</b></h4>
-                        <p>Aug 2022 – Present</p>
-                        <p><a href="https://authors.elsevier.com/a/1mLDv6TBG5nzo" class="w3-button w3-round-large w3-border cute">Neuropsychologia (2025)</a> </p>
-                        <!-- <p><a href="https://authors.elsevier.com/a/1mLDv6TBG5nzo" class="w3-button w3-round-large w3-border cute">Neuropsychologia (2025)</a> </p> -->
+            <div class="w3-container" id="news">
+                <div class="news-section">
+                    <div class="section-title news-title">News</div>
+
+                    <div class="news-wrap">
+                        <!-- <div class="news-pin" aria-hidden="true">🪼</div> -->
+                        <div class="news-pin" aria-hidden="true">
+                            <div class="jelly-mini">
+                                <svg viewBox="0 0 600 600">
+                                    <defs>
+                                        <linearGradient id="jellyBodyGradientMini" x1="0" x2="0" y1="0" y2="1">
+                                            <stop offset="0%" stop-color="#c9c0ff" />
+                                            <stop offset="35%" stop-color="#8fa8ff" />
+                                            <stop offset="100%" stop-color="#5c7ae6" />
+                                        </linearGradient>
+
+                                        <linearGradient id="tentacleGradientMini" x1="0" x2="0" y1="0" y2="1">
+                                            <stop offset="0%" stop-color="#e2e6ff" />
+                                            <stop offset="100%" stop-color="#6d84ff" />
+                                        </linearGradient>
+
+                                        <filter id="whiteGlowMini" x="-50%" y="-50%" width="200%" height="200%">
+                                            <feGaussianBlur stdDeviation="3" result="blur"/>
+                                            <feMerge>
+                                                <feMergeNode in="blur"/>
+                                                <feMergeNode in="SourceGraphic"/>
+                                            </feMerge>
+                                        </filter>
+                                    </defs>
+
+                                    <g id="jellyMiniGroup" transform="translate(300 290)">
+                                        <g id="tentaclesMini"></g>
+                                        <path
+                                        id="jellyBodyMini"
+                                        fill="url(#jellyBodyGradientMini)"
+                                        stroke="rgba(255,255,255,0.28)"
+                                        stroke-width="2"
+                                        d="
+                                            M -94 6
+                                            C -104 -54, -84 -108, 0 -108
+                                            C 84 -108, 104 -54, 94 6
+                                            C 70 22, 42 21, 18 21.5
+                                            C 4 12.5, -4 12.5, -18 21.5
+                                            C -42 21, -70 22, -94 6
+                                            Z
+                                        "
+                                        transform="scale(0.75)"
+                                        ></path>
+                                        <!-- body dots -->
+                                        <g id="bodyDotsMini" filter="url(#whiteGlowMini)" opacity="0.95">
+                                            <ellipse cx="-7" cy="-60" rx="11.5" ry="9.2" fill="none" stroke="white" stroke-width="3"
+                                                    transform="rotate(-12 -14 -36)"/>
+                                            <ellipse cx="12" cy="-60" rx="10.2" ry="8.8" fill="none" stroke="white" stroke-width="3"
+                                                    transform="rotate(10 14 -36)"/>
+                                            <ellipse cx="-15" cy="-40" rx="10.8" ry="9.6" fill="none" stroke="white" stroke-width="3"
+                                                    transform="rotate(8 -14 -16)"/>
+                                            <ellipse cx="21" cy="-40" rx="11.1" ry="8.9" fill="none" stroke="white" stroke-width="3"
+                                                    transform="rotate(-10 14 -16)"/>
+                                        </g>
+
+                                        <!-- tentacle dots -->
+                                        <g id="tentacleDotsMini" filter="url(#whiteGlowMini)"></g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="news-container">
+                            <div class="news-item">
+                                <div class="news-date">2026.08</div>
+                                <div class="news-content">
+                                    Teaching my first in-person course <b>Engineering Psychology</b> at Georgia Tech!
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-date">2026.07</div>
+                                <div class="news-content">
+                                    Navigation control theory talk accepted by <b>iNAV</b> — see you in Canada! 🫐
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="w3-container" id="background">
+                <div class="w3-third w3-container">
+                    <div style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 1.6em;">Research Interests</div>
+                    <table>
+                        <tr>
+                            <th><img src="assets/reinforcement.png" alt="Machine Learning Cartoon" class="w3-image w3-container" style="height:4rem; margin:16px 16px;"></th>
+                            <th>Control theory</th>
+                        </tr>
+
+                        <tr>
+                            <th><img src="assets/vr.png" alt="Virtual Reality Cartoon" class="w3-image w3-container" style="height:5rem; margin:16px 16px;"></th>
+                            <th>Virtual reality</th>
+                        </tr>
+
+                        <tr>
+                            <th><img src="assets/brain.png" alt="Human Brain Cartoon" class="w3-image w3-container" style="height:4rem; margin:16px 16px;"></th>
+                            <th>	Multi-sensory integration</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="w3-twothird w3-container">
+                    <div style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 1.6em;">Education</div>
+                    <table style="margin: 0 auto;">
+                        <tr>
+                            <th><img src="assets/gatech.svg" alt="Georgia Institute of Technology Logo" class="w3-image w3-container" style="height:4rem; margin:16px 16px;"></th>
+                            <th>
+                                PhD in Psychology <br>
+                                Georgia Institute of Technology |
+                                2024 - Present
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th><img src="assets/ua.png" alt="University of Arizona Logo" class="w3-image w3-container" style="height:4rem; margin:16px 16px;"></th>
+                            <th>
+                                MA in Psychology <br>
+                                University of Arizona |
+                                2022 - 2024
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th><img src="assets/uoft.png" alt="University of Toronto Logo" class="w3-image w3-container" style="height:5rem; margin:16px 16px;"></th>
+                            <th>
+                                Honours BSc in Psychology <br>
+                                University of Toronto |
+                                2016 - 2020
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+            <section class="w3-container sensory-map-section" id="sensory-map">
+                <div class="section-title">Research Roadmap</div>
+                <p class="sensory-map-intro">Closed-loop control across sensory modalities.</p>
+                <div class="sensory-map-stage" aria-label="Interactive research map with animated character">
+                    <svg id="sensoryCharacter" xmlns="http://www.w3.org/2000/svg" viewBox="320 775 245 205" role="img">
+      <!-- <title>Avatar holding a book and waving</title> -->
+
+      <!-- Extracted middle character from the Illustrator/PDF-compatible AI file -->
+      <g id="body">
+        <path fill-rule="nonzero" fill="rgb(19.999695%, 19.999695%, 19.999695%)" fill-opacity="1" d="M 396.832031 802.101562 L 394.972656 802.101562 C 391.835938 802.101562 389.066406 803.640625 387.386719 805.988281 C 386.339844 798.59375 379.902344 792.890625 372.097656 792.890625 L 364.453125 792.890625 C 346.335938 792.890625 331.652344 807.335938 331.652344 825.15625 L 331.652344 869.050781 C 331.652344 874.136719 334.199219 878.625 338.097656 881.386719 L 338.097656 892.78125 C 338.097656 901.175781 345.019531 907.984375 353.554688 907.984375 L 386.945312 907.984375 C 395.480469 907.984375 402.398438 901.175781 402.398438 892.78125 L 402.398438 892.046875 C 406.160156 890.882812 408.894531 887.425781 408.894531 883.339844 L 408.894531 813.96875 C 408.894531 807.414062 403.492188 802.101562 396.832031 802.101562 "/>
+        <path fill-rule="nonzero" fill="rgb(26.274109%, 22.3526%, 20.783997%)" fill-opacity="1" d="M 369.3125 960.984375 L 357.3125 960.984375 L 357.3125 958.402344 C 357.3125 955.410156 359.742188 952.984375 362.734375 952.984375 L 369.3125 952.984375 Z M 369.3125 960.984375 "/>
+        <path fill-rule="nonzero" fill="rgb(26.274109%, 22.3526%, 20.783997%)" fill-opacity="1" d="M 374.3125 960.984375 L 386.3125 960.984375 L 386.3125 958.402344 C 386.3125 955.410156 383.886719 952.984375 380.894531 952.984375 L 374.3125 952.984375 Z M 374.3125 960.984375 "/>
+        <path fill-rule="nonzero" fill="rgb(24.705505%, 34.901428%, 49.01886%)" fill-opacity="1" d="M 377.71875 899.984375 L 365.910156 899.984375 C 364.050781 899.984375 362.542969 901.492188 362.542969 903.351562 L 362.542969 951.394531 C 362.542969 952.273438 363.257812 952.984375 364.136719 952.984375 L 370.3125 952.984375 L 370.3125 924.199219 L 373.3125 924.199219 L 373.3125 952.984375 L 379.492188 952.984375 C 380.371094 952.984375 381.085938 952.273438 381.085938 951.394531 L 381.085938 903.351562 C 381.085938 901.492188 379.578125 899.984375 377.71875 899.984375 "/>
+        <path fill-rule="nonzero" fill="rgb(89.804077%, 75.686646%, 70.588684%)" fill-opacity="1" d="M 399.851562 833.820312 L 399.679688 833.820312 C 398.1875 820.324219 386.75 809.820312 372.851562 809.820312 C 358.953125 809.820312 347.515625 820.324219 346.019531 833.820312 L 345.851562 833.820312 C 343.089844 833.820312 340.851562 836.0625 340.851562 838.820312 C 340.851562 841.582031 343.089844 843.820312 345.851562 843.820312 L 345.851562 851 C 345.851562 858.082031 351.589844 863.820312 358.671875 863.820312 L 387.03125 863.820312 C 394.109375 863.820312 399.851562 858.082031 399.851562 851 L 399.851562 843.820312 C 402.613281 843.820312 404.851562 841.582031 404.851562 838.820312 C 404.851562 836.0625 402.613281 833.820312 399.851562 833.820312 "/>
+        <path fill-rule="nonzero" fill="rgb(81.176758%, 58.824158%, 53.334045%)" fill-opacity="1" d="M 375.492188 840.25 L 372.851562 837.820312 L 370.210938 840.25 C 368.375 841.9375 369.675781 844.820312 372.269531 844.820312 L 373.433594 844.820312 C 376.027344 844.820312 377.328125 841.9375 375.492188 840.25 "/>
+        <g id="eyes" aria-hidden="true">
+            <circle class="svg-eye" cx="361.5" cy="833.0" r="6.4" fill="#FFFEF2"/>
+            <circle class="svg-eye" cx="384.2" cy="833.0" r="6.4" fill="#FFFEF2"/>
+
+            <circle id="leftPupil" class="svg-pupil" cx="363.0" cy="833.2" r="2.45" fill="#000"/>
+            <circle id="rightPupil" class="svg-pupil" cx="385.7" cy="833.2" r="2.45" fill="#000"/>
+        </g>
+        <path fill-rule="nonzero" fill="rgb(19.999695%, 19.999695%, 19.999695%)" fill-opacity="1" d="M 345.8125 827.820312 L 351.796875 827.820312 C 361.554688 827.820312 369.46875 819.910156 369.46875 810.148438 L 369.46875 803.820312 L 369.125 803.820312 C 356.058594 803.820312 345.46875 814.414062 345.46875 827.476562 C 345.46875 827.667969 345.625 827.820312 345.8125 827.820312 "/>
+        <path id="mouthSmile" fill-rule="nonzero" fill="rgb(83.529663%, 56.863403%, 51.765442%)" fill-opacity="1" d="M 371.816406 857.3125 C 367.371094 857.113281 364.421875 854.527344 363.1875 853.191406 C 362.875 852.851562 362.914062 852.320312 363.28125 852.039062 L 363.625 851.769531 C 363.941406 851.523438 364.394531 851.554688 364.667969 851.847656 C 365.730469 853 368.332031 855.289062 372.246094 855.324219 C 376.402344 855.367188 379.152344 852.839844 380.199219 851.671875 C 380.46875 851.371094 380.917969 851.332031 381.238281 851.574219 L 381.589844 851.832031 C 381.957031 852.105469 382.019531 852.632812 381.710938 852.976562 C 380.457031 854.375 377.179688 857.375 372.222656 857.324219 C 372.085938 857.320312 371.953125 857.316406 371.816406 857.3125 "/>
+        <circle id="mouthCircle" cx="372.85" cy="854.8" r="5.7" fill="#FF4545"/>
+        <path id="mouthMorph" d="M 363 852 C 365 855 369 857 372.85 857 C 376.7 857 380.5 855 382.2 852 C 380.5 858 365 858 363 852 C 363 852 363 852 363 852 Z"/>
+      </g>
+
+      <!-- Arm/book/hand extracted from the same character and animated with JavaScript -->
+      <g id="wavingArm" transform="translate(743 0) scale(-1 1)">
+        <g id="bookGroup" transform="translate(-1 -2) rotate(-18 412 876)">
+            <path id="bookmark" fill="#333333" d="M 417.0 885.15 L 419.75 884.6 L 419.75 889.3 L 419.1 887.55 L 418.38 889.6 Z"/>
+            <path id="bookCover" fill-rule="nonzero" fill="rgb(40.391541%, 15.293884%, 14.117432%)" fill-opacity="1" d="M 412.988281 887.082031 L 421.746094 885.269531 C 423.386719 884.929688 424.4375 883.328125 424.097656 881.691406 L 421.269531 868.039062 C 420.933594 866.398438 419.328125 865.347656 417.691406 865.6875 L 408.933594 867.5 C 407.296875 867.839844 406.242188 869.441406 406.582031 871.078125 L 409.410156 884.730469 C 409.75 886.371094 411.351562 887.421875 412.988281 887.082031 "/>
+            <text id="phiCover" x="411.2" y="879.5" transform="rotate(-11 411.2 879.5)">Ψ</text>
+        </g>
+        <path fill-rule="nonzero" fill="rgb(88.235474%, 76.470947%, 72.157288%)" fill-opacity="1" d="M 411.398438 883.144531 L 406.316406 873.386719 L 400.058594 876.644531 L 405.140625 886.402344 Z M 411.398438 883.144531 "/>
+        <path fill-rule="nonzero" fill="rgb(88.235474%, 76.470947%, 72.157288%)" fill-opacity="1" d="M 413.71875 871.773438 C 413.214844 870.800781 412.011719 870.421875 411.039062 870.929688 L 403.03125 875.097656 L 404.867188 878.625 L 412.875 874.457031 C 413.847656 873.949219 414.226562 872.746094 413.71875 871.773438 "/>
+        <path fill-rule="nonzero" fill="rgb(88.235474%, 76.470947%, 72.157288%)" fill-opacity="1" d="M 413.195312 876.480469 L 413.199219 876.179688 C 413.210938 875.082031 412.335938 874.179688 411.238281 874.164062 L 405.492188 874.085938 L 405.433594 878.363281 L 411.179688 878.441406 C 412.277344 878.457031 413.179688 877.578125 413.195312 876.480469 "/>
+      </g>
+
+      <g id="danglingHandFlipped" transform="translate(743 0) scale(-1 1)">
+        <path fill-rule="nonzero" fill="rgb(88.235474%, 76.470947%, 72.157288%)" fill-opacity="1" d="M 358.707031 915.183594 L 360.117188 911.085938 L 349.71875 907.507812 L 348.628906 910.675781 L 345.6875 919.210938 C 345.332031 920.246094 345.882812 921.378906 346.921875 921.734375 C 347.960938 922.09375 349.089844 921.542969 349.449219 920.503906 L 349.664062 919.875 L 349.664062 922.074219 C 349.664062 923.175781 350.554688 924.0625 351.652344 924.0625 C 352.75 924.0625 353.640625 923.175781 353.640625 922.074219 L 353.640625 916.316406 L 354.613281 916.652344 L 355 919.027344 C 355.175781 920.109375 356.199219 920.847656 357.28125 920.667969 L 357.582031 920.621094 C 358.664062 920.445312 359.398438 919.421875 359.222656 918.339844 Z M 358.707031 915.183594 "/>
+      </g>
+
+      <path id="frontWhiteCloth" transform="translate(743 0) scale(-1 1)" fill-rule="nonzero" fill="rgb(93.333435%, 92.549133%, 85.098267%)" fill-opacity="1" d="M 400.855469 875.933594 L 390.46875 881.101562 L 382.589844 870.757812 L 382.363281 870.929688 L 382.363281 867.054688 C 382.363281 865.386719 381.007812 864.03125 379.339844 864.03125 L 362.386719 864.03125 C 360.71875 864.03125 359.363281 865.386719 359.363281 867.054688 L 359.363281 874.035156 L 348.996094 908.472656 L 360.488281 911.933594 L 363.769531 901.03125 L 379.339844 901.03125 C 381.007812 901.03125 382.363281 899.675781 382.363281 898.007812 L 382.363281 890.265625 L 384.820312 893.488281 C 385.457031 894.328125 386.492188 894.679688 387.464844 894.503906 C 388.21875 894.585938 389.003906 894.46875 389.734375 894.105469 L 405.898438 886.0625 Z M 400.855469 875.933594 "/>
+
+      <g id="projectCallouts" aria-label="Project callouts">
+        <g class="project" tabindex="0">
+          <path class="project-line" d="M 374 950 C 404 930 435 928 449 934"/>
+          <foreignObject x="434" y="860" width="310" height="140" class="project-card-wrap"><div xmlns="http://www.w3.org/1999/xhtml" class="project-stack project-stack-leg"><div class="folder-sheet folder-sheet-one"></div><div class="folder-sheet folder-sheet-two"></div><a class="paper-card paper-card-one" href="https://www.sciencedirect.com/science/article/pii/S0028393225002866" target="_blank" rel="noopener">Future project</a><a class="paper-card paper-card-two" href="https://doi.org/10.1016/j.neuropsychologia.2025.109351" target="_blank" rel="noopener">Straight-line distance estimation. Neuropsychologia (2025)</a><a class="paper-card paper-card-three" href="https://www.biorxiv.org/content/10.64898/2026.06.02.729319v1" target="_blank" rel="noopener">Angular distance estimation. Under review</a><div class="project-folder"><div class="project-folder-tab"></div><div class="project-folder-label">🦶 Legs</div></div></div></foreignObject>
+        </g>
+        <g class="project" tabindex="0">
+          <path class="project-line" d="M 392 833 C 404 816 421 802 429 802"/>
+          <foreignObject x="414" y="728" width="310" height="140" class="project-card-wrap"><div xmlns="http://www.w3.org/1999/xhtml" class="project-stack project-stack-vision"><div class="folder-sheet folder-sheet-one"></div><div class="folder-sheet folder-sheet-two"></div><a class="paper-card paper-card-one" href="#paper-vision-1">Future project</a><a class="paper-card paper-card-two" href="https://www.biorxiv.org/content/10.64898/2026.06.02.729319v1" target="_blank" rel="noopener">Closed-loop control based on visual feedback. Under review</a><a class="paper-card paper-card-three" href="https://doi.org/10.1016/j.neuropsychologia.2025.109351" target="_blank" rel="noopener">Landmark induced prediction error. Neuropsychologia (2025)</a><div class="project-folder"><div class="project-folder-tab"></div><div class="project-folder-label">👁 Eyes</div></div></div></foreignObject>
+        </g>
+        <g class="project" tabindex="0">
+          <path class="project-line" d="M 395 920 C 404 904 421 890 429 890"/>
+          <foreignObject x="414" y="816" width="310" height="140" class="project-card-wrap"><div xmlns="http://www.w3.org/1999/xhtml" class="project-stack project-stack-hand"><div class="folder-sheet folder-sheet-one"></div><div class="folder-sheet folder-sheet-two"></div><a class="paper-card paper-card-one" href="#paper-hand-1">Future project</a><a class="paper-card paper-card-two" href="#paper-hand-2">Future project</a><a class="paper-card paper-card-three" href="https://doi.org/10.1038/s41539-026-00442-6" target="_blank" rel="noopener">Teleoperation of surgical robots. npj Science of Learning (2026)</a><div class="project-folder"><div class="project-folder-tab"></div><div class="project-folder-label">✋ Hands</div></div></div></foreignObject>
+        </g>
+        <g class="project" tabindex="0">
+          <path class="project-line" d="M 401 839 C 418 846 439 842 449 846"/>
+          <foreignObject x="434" y="772" width="310" height="140" class="project-card-wrap"><div xmlns="http://www.w3.org/1999/xhtml" class="project-stack project-stack-auditory"><div class="folder-sheet folder-sheet-one"></div><div class="folder-sheet folder-sheet-two"></div><a class="paper-card paper-card-one" href="#paper-auditory-1">Future project</a><a class="paper-card paper-card-two" href="#paper-auditory-2">Future project</a><a class="paper-card paper-card-three" href="#paper-auditory-3">Future project</a><div class="project-folder"><div class="project-folder-tab"></div><div class="project-folder-label">👂 Ears</div></div></div></foreignObject>
+        </g>
+      </g>
+      <rect id="faceHit" x="344" y="810" width="58" height="55" rx="24" fill="transparent" pointer-events="all"/>
+    </svg>
+                </div>
+                <script>
+                (function () {
+                    const svg = document.getElementById('sensoryCharacter');
+                    if (!svg) return;
+
+                    /* 1) Slow elbow waving animation */
+                    const wavingArm = document.getElementById('wavingArm');
+                    const elbowX = 400.9;
+                    const elbowY = 876.0;
+                    const flipAxisX = 743;
+                    let sensoryStart = null;
+
+                    function animateWavingArm(timestamp) {
+                        if (sensoryStart === null) sensoryStart = timestamp;
+                        const t = (timestamp - sensoryStart) / 1000;
+                        const angle = Math.sin(t * 1.05) * 5.5;
+
+                        if (wavingArm) {
+                            wavingArm.setAttribute(
+                                'transform',
+                                `translate(${flipAxisX} 0) scale(-1 1) rotate(${angle} ${elbowX} ${elbowY})`
+                            );
+                        }
+
+                        requestAnimationFrame(animateWavingArm);
+                    }
+                    requestAnimationFrame(animateWavingArm);
+
+                    /* 2) Eye-following animation */
+                    const pupils = [
+                        { node: document.getElementById('leftPupil'), cx: 363.0, cy: 833.2 },
+                        { node: document.getElementById('rightPupil'), cx: 385.7, cy: 833.2 }
+                    ].filter(p => p.node);
+
+                    document.addEventListener('mousemove', (event) => {
+                        const matrix = svg.getScreenCTM();
+                        if (!matrix) return;
+
+                        const pt = svg.createSVGPoint();
+                        pt.x = event.clientX;
+                        pt.y = event.clientY;
+                        const cursor = pt.matrixTransform(matrix.inverse());
+
+                        pupils.forEach((p) => {
+                            const dx = cursor.x - p.cx;
+                            const dy = cursor.y - p.cy;
+                            const len = Math.hypot(dx, dy) || 1;
+                            const maxOffset = 2.5;
+                            p.node.setAttribute('cx', p.cx + (dx / len) * maxOffset);
+                            p.node.setAttribute('cy', p.cy + (dy / len) * maxOffset);
+                        });
+                    });
+
+                    /* 3) Smooth mouth morph on face hover */
+                    const faceHit = document.getElementById('faceHit');
+                    const mouthMorph = document.getElementById('mouthMorph');
+
+                    const smileNums = [
+                        363,852, 365,855, 369,857, 372.85,857,
+                        376.7,857, 380.5,855, 382.2,852,
+                        380.5,858, 365,858, 363,852,
+                        363,852, 363,852, 363,852
+                    ];
+
+                    const circleNums = [
+                        372.85,849.1, 375.99,849.1, 378.55,851.66, 378.55,854.8,
+                        378.55,857.94, 375.99,860.5, 372.85,860.5,
+                        369.71,860.5, 367.15,857.94, 367.15,854.8,
+                        367.15,851.66, 369.71,849.1, 372.85,849.1
+                    ];
+
+                    let mouthValue = 0;
+                    let mouthTarget = 0;
+                    let mouthLast = null;
+
+                    function mouthPath(nums) {
+                        return `M ${nums[0]} ${nums[1]}
+                                C ${nums[2]} ${nums[3]} ${nums[4]} ${nums[5]} ${nums[6]} ${nums[7]}
+                                C ${nums[8]} ${nums[9]} ${nums[10]} ${nums[11]} ${nums[12]} ${nums[13]}
+                                C ${nums[14]} ${nums[15]} ${nums[16]} ${nums[17]} ${nums[18]} ${nums[19]}
+                                C ${nums[20]} ${nums[21]} ${nums[22]} ${nums[23]} ${nums[24]} ${nums[25]} Z`;
+                    }
+
+                    function animateMouth(timestamp) {
+                        if (!mouthMorph) return;
+                        if (mouthLast === null) mouthLast = timestamp;
+
+                        const dt = Math.min((timestamp - mouthLast) / 1000, 0.05);
+                        mouthLast = timestamp;
+                        const smoothing = 1 - Math.exp(-dt * 3.25);
+                        mouthValue += (mouthTarget - mouthValue) * smoothing;
+
+                        const nums = smileNums.map((v, i) => v + (circleNums[i] - v) * mouthValue);
+                        mouthMorph.setAttribute('d', mouthPath(nums));
+
+                        requestAnimationFrame(animateMouth);
+                    }
+                    requestAnimationFrame(animateMouth);
+
+                    if (faceHit) {
+                        faceHit.addEventListener('mouseenter', () => { mouthTarget = 1; });
+                        faceHit.addEventListener('mouseleave', () => { mouthTarget = 0; });
+                    }
+
+                    /* 4) Explicit folder toggle; paper links remain normal anchors */
+                    const projects = Array.from(document.querySelectorAll('#projectCallouts .project'));
+
+                    function closeProject(project) {
+                        project.classList.remove('is-open');
+                        const folder = project.querySelector('.project-folder');
+                        if (folder) folder.setAttribute('aria-expanded', 'false');
+                    }
+
+                    projects.forEach((project) => {
+                        const folder = project.querySelector('.project-folder');
+                        if (!folder) return;
+
+                        folder.setAttribute('role', 'button');
+                        folder.setAttribute('tabindex', '0');
+                        folder.setAttribute('aria-expanded', 'false');
+
+                        const toggleProject = (event) => {
+                            event.preventDefault();
+                            event.stopPropagation();
+
+                            const shouldOpen = !project.classList.contains('is-open');
+                            projects.forEach(closeProject);
+
+                            if (shouldOpen) {
+                                project.classList.add('is-open');
+                                folder.setAttribute('aria-expanded', 'true');
+                                project.parentNode.appendChild(project);
+                            }
+                        };
+
+                        folder.addEventListener('click', toggleProject);
+                        folder.addEventListener('keydown', (event) => {
+                            if (event.key === 'Enter' || event.key === ' ') toggleProject(event);
+                        });
+                    });
+                })();
+                </script>
+            </section>
+
+            <div class="w3-container" id="publications">
+                <div class="section-title">Featured Publications</div>
+
+                <div class="publication-list-custom">
+
+                    <div class="publication-card-custom publication-feature-row">
+                        <div class="publication-left-custom">
+                            <img src="assets/vr_control.png" alt="Navigation control theory paper thumbnail" class="publication-image-custom">
+                            <div class="publication-apa-custom">
+                                <span class="author-highlight">Huang, Y.</span>, Vishwanath, A., Du, Y. K., Watson, M. F., Asiri, O., Ekstrom, A. D., &amp; Wilson, R. C. (Under review). <strong>Modeling the journey as well as the destination: a control theory account of rotational navigation.</strong>
+                            </div>
+                        </div>
+
+                        <div class="publication-right-custom">
+                            <div class="publication-feature-title-custom">Closed-Loop Control in Human Navigation</div>
+                            <div class="publication-summary-custom">
+                                We investigate how people turn spatial estimation into action during navigation. By combining virtual reality experiments with a control-theoretic model, we show that visual prediction errors trigger rapid movement corrections and that navigation is best understood as a continuous feedback-control process. This work connects theories of motor control and cue combination during navigation.
+                            </div>
+                            <div class="publication-inline-links-custom">
+                                <a href="https://www.biorxiv.org/content/10.64898/2026.06.02.729319v1" target="_blank" rel="noopener">bioRxiv</a> 
+                                <!-- | <a href="https://osf.io/pm69n/overview">DATA</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-card-custom publication-feature-row">
+                        <div class="publication-left-custom">
+                            <img src="assets/robot_2.png" alt="Surgical robot teleoperation paper thumbnail" class="publication-image-custom">
+                            <div class="publication-apa-custom">
+                                <span class="author-highlight">Huang, Y.</span>, Cai, Y., Li, M., Chen, Y., &amp; Wilson, R. C. (2026). <strong>Human learning dynamics during teleoperation of surgical robots.</strong> <em>npj Science of Learning.</em>
+                            </div>
+                        </div>
+
+                        <div class="publication-right-custom">
+                            <div class="publication-feature-title-custom">Learning to Control Surgical Robots</div>
+                            <div class="publication-summary-custom">
+                                We investigate how people learn to operate surgical robots and how interface design affects learning. By combining teleoperation experiments with computational modeling, we show that a simple control-theoretic model captures human skill acquisition and transfer. These findings provide a foundation for designing curricula that better support surgical training.
+                            </div>
+                            <div class="publication-inline-links-custom">
+                                <a href="https://doi.org/10.1038/s41539-026-00442-6" target="_blank" rel="noopener">DOI</a> | <a href="https://osf.io/acuyr/overview" target="_blank" rel="noopener">DATA</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-card-custom publication-feature-row">
+                        <div class="publication-left-custom">
+                            <img src="assets/neuropsychologia_2025.png" alt="Bayesian cue combination paper thumbnail" class="publication-image-custom">
+                            <div class="publication-apa-custom">
+                                Vishwanath, A., Watson, M. F., Gin, M. K., Markham, D. C., <span class="author-highlight">Huang, Y.</span>, Du, Y. K., Ekstrom, A. D., &amp; Wilson, R. C. (2025). <strong>Bayesian cue combination best predicts straight-line distance estimation with translated visual landmarks.</strong> <em>Neuropsychologia.</em>
+                            </div>
+                        </div>
+
+                        <div class="publication-right-custom">
+                            <div class="publication-feature-title-custom">Bayesian Cue Combination in Distance Estimation</div>
+                            <div class="publication-summary-custom">
+                                We investigate how people combine self-motion and visual landmarks when estimating distance. Using immersive virtual reality and computational modeling, we show that most individuals weight these information sources according to their uncertainty, consistent with Bayesian cue combination. These findings help explain why people navigate differently under ambiguous sensory information.
+                            </div>
+                            <div class="publication-inline-links-custom">
+                                <a href="https://doi.org/10.1016/j.neuropsychologia.2025.109351" target="_blank" rel="noopener">DOI</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             
-            <div class="w3-col m4 s12">
-                <div class="card">
-                    <img src="assets/robot.png" alt="Surgical Robot" class="w3-image w3-container" style="height:180px; display:block; margin:0 auto;">
-                    <div class="container">
-                        <h4><b>Learning Dynamics in Surgical Robot Teleoperation</b></h4>
-                        <p>Jan 2025 – Present</p>
-                        <!-- <p><a href="https://authors.elsevier.com/a/1mLDv6TBG5nzo" class="w3-button w3-round-large w3-border cute">Neuropsychologia (2025)</a> </p> -->
-                    </div>
-                </div>
-            </div>    
-        </div>
-    </div> 
+            <div class="photo-carousel-card">
+                <div class="section-title">Moments</div>
+                <div class="photo-inner">
+                    <button class="carousel-btn carousel-btn-prev">&#10094;</button>
+                    <div class="photo-carousel-track-wrap">
+                        <div class="photo-carousel-track" id="photoCarouselTrack">
 
+                            <div class="photo-slide active">
+                                <div class="photo-frame landscape">
+                                    <img src="assets/5_poster.jpg" alt="Psychonomic Society Annual Meeting 2024">
+                                </div>
+                                <div class="photo-caption">
+                                    Poster presentation at Psychonomic Society in New York.
+                                </div>
+                            </div>
 
-    <div id="awards">
-        <div class="w3-container" style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 2em;">Grants and Awards</div>
-        <div class="w3-row-padding w3-margin-top">
-            <div class="w3-col m4 s12">
-                <div class="card">
-                    <img src="assets/ua_cogsci.png" alt="University of Arizona Cognitive Science Logo" class="w3-image w3-container" style="width: 300px; margin-bottom:10px; padding: 1px;">
-                    <div class="container">
-                        <h4><b>Outstanding Research Award</b></h4>
-                        <p>Dec 2023</p>
-                        <p><b> Awarding Body:</b> University of Arizona</p>
-                    </div>
-                </div>
-            </div>
+                            <div class="photo-slide">
+                                <div class="photo-frame portrait">
+                                    <img src="assets/2_art_crawl.jpg" alt="Clough Art Crawl 2026">
+                                </div>
+                                <div class="photo-caption">
+                                    Artwork exhibition at the Clough Commons, Georgia Tech.
+                                </div>
+                            </div>
 
-            <div class="w3-col m4 s12">
-                <div class="card">
-                    <img src="assets/SfN.jpeg" alt="SfN Icon" class="w3-image w3-container" style="height:80px; margin-bottom:10px; padding: 1px;">
-                    <div class="container">
-                        <h4><b>Trainee Professional Development Award</b></h4>
-                        <p>Nov 2023</p>
-                        <p><b>Awarding Body:</b> Society for Neuroscience</p>
+                            <div class="photo-slide">
+                                <div class="photo-frame landscape">
+                                    <img src="assets/3_iNAV.jpg" alt="Interdisciplinary Navigation Symposium 2026">
+                                </div>
+                                <div class="photo-caption">
+                                    Oral presentation at the Interdisciplinary Navigation Symposium in Banff.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="w3-col m4 s12">
-                <div class="card">
-                    <img src="assets/ua_health.png" alt="University of Arizona Health Sciences Logo" class="w3-image w3-container" style="width: 300px; margin-bottom:10px; padding: 1px;">
-                    <div class="container">
-                        <h4><b>SensorLab Seed Grant</b></h4>
-                        <p>Jul 2023 - Jun 2024</p>
-                        <p><b>Funder:</b> University of Arizona</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="w3-col m4 s12" style="margin-top: 20px;">
-                <div class="card">
-                    <img src="assets/ua_psychology.png" alt="University of Arizona Psychology Logo" class="w3-image w3-container" style="width: 300px; margin-bottom:10px; padding: 1px;">
-                    <div class="container">
-                        <h4><b>Best Presentation Award, Years 1-2</b></h4>
-                        <p>Dec 2022</p>
-                        <p><b> Awarding Body:</b> University of Arizona</p>
+                    <button class="carousel-btn carousel-btn-next">&#10095;</button>
+
+                    <div class="carousel-dots" id="photoCarouselDots">
+                        <button class="carousel-dot active"></button>
+                        <button class="carousel-dot"></button>
+                        <button class="carousel-dot"></button>
                     </div>
                 </div>
             </div>
 
-            <div class="w3-col m4 s12" style="margin-top: 20px;">
-                <div class="card">
-                    <img src="assets/ua_gpsc.png" alt="University of Arizona Logo" class="w3-image w3-container" style="width: 300px; margin-bottom:10px; padding: 1px;">
-                    <div class="container">
-                        <h4><b>Research and Project (ReaP) Grant</b></h4>
-                        <p>Nov 2022 - Nov 2023</p>
-                        <p><b>Funder:</b> University of Arizona</p>
-                    </div>
+            <div class="w3-container" id="teaching">
+                <div class="section-title">Teaching</div>
+
+                <div class="teaching-scroll">
+                    <table class="w3-table w3-striped teaching-table">
+
+                        <tr>
+                            <td><img src="assets/human.png" alt="Human Icon" style="height:5rem; margin:16px 16px;"></td>
+                            <td style="vertical-align: middle;">
+                                <div class="entry-title">Course: Engineering Psychology [30 students]</div>
+                                <div class="entry-role">Instructor</div>
+                            </td>
+                            <td style="vertical-align: middle;" class="entry-date">2026 Fall</td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/math.png" alt="Math Icon" style="height:5rem; margin:16px 16px;"></td>
+                            <td style="vertical-align: middle;">
+                                <div class="entry-title">Course: Math of the Mind [16 students]</div>
+                                <div class="entry-role">Teaching Assistant</div>
+                            </td>
+                            <td style="vertical-align: middle;" class="entry-date">2025 Fall</td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/methods.png" alt="Methods Icon" style="height:5rem; margin:16px 16px;"></td>
+                            <td style="vertical-align: middle;">
+                                <div class="entry-title">Course: Research Methods [30 students]</div>
+                                <div class="entry-role">Teaching Assistant</div>
+                            </td>
+                            <td style="vertical-align: middle;" class="entry-date">2025 Summer</td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/researcher.png" alt="Researcher Icon" style="height:5rem; margin:16px 16px;"></td>
+                            <td style="vertical-align: middle;">
+                                <div class="entry-title">Course: Applied Experimental Psychology [40 students]</div>
+                                <div class="entry-role">Lab Instructor</div>
+                            </td>
+                            <td style="vertical-align: middle;" class="entry-date">2025 Spring</td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/human.png" alt="Human Icon" style="height:5rem; margin:16px 16px;"></td>
+                            <td style="vertical-align: middle;">
+                                <div class="entry-title">Course: General Psychology [150 students]</div>
+                                <div class="entry-role">Teaching Assistant (Full Course) and Guest Lecturer (Memory)</div>
+                            </td>
+                            <td style="vertical-align: middle;" class="entry-date">2024 Fall</td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/vestibular.png" alt="Walking Icon" style="height:5rem; margin:16px 16px;"></td>
+                            <td style="vertical-align: middle;">
+                                <div class="entry-title">Course: Vestibular System [20 students]</div>
+                                <div class="entry-role">Guest Lecturer</div>
+                                <div class="entry-meta">
+                                    <a href="https://www.youtube.com/watch?v=DY2wQ6zBnWE" class="w3-button w3-round-large w3-border cute">YouTube</a>
+                                </div>
+                            </td>
+                            <td style="vertical-align: middle;" class="entry-date">2023 Spring</td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/flask.png" alt="Flask Icon" style="height:5rem; margin:16px 16px;"></td>
+                            <td style="vertical-align: middle;">
+                                <div class="entry-title">Course: Drugs and the Brain [200 students]</div>
+                                <div class="entry-role">Teaching Assistant (Full Course) and Guest Lecturer (Psychedelics)</div>
+                            </td>
+                            <td style="vertical-align: middle;" class="entry-date">2023 Spring</td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/stats.png" alt="Stats Icon" style="height:5rem; margin:16px 16px;"></td>
+                            <td style="vertical-align: middle;">
+                                <div class="entry-title">Course: Psychological Measurement and Statistics [200 students]</div>
+                                <div class="entry-role">Teaching Assistant (Full Course) and Guest Lecturer (ANOVA)</div>
+                            </td>
+                            <td style="vertical-align: middle;" class="entry-date">2022 Fall</td>
+                        </tr>
+
+                    </table>
                 </div>
             </div>
-   
-        </div>
-    </div> 
 
-    <div class="w3-container" id="publications">
-        <span class="w3-container" style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 2em;">Featured Publications</span>
-        <span class="table-list">
-            <table class="w3-table w3-striped">
-                <tr>
-                    <td>
-                        <img src="assets/virtual_navigation.png" alt="Spatial Navigation Icon"
-                            class="w3-image w3-container"
-                            style="height:5rem; margin:16px 16px;">
-                    </td>
-                    <td>
-                        Bayesian cue combination best predicts straight-line distance estimation with translated visual landmarks.
-                        <div class="table-list-sub">Neuropsychologia (2025)</div>
-                        <a href="https://authors.elsevier.com/a/1mLDv6TBG5nzo" class="w3-button w3-round-large w3-border cute">PAPER</a> 
-                    </td>
-                    <td>
-                        Vishwanath, A., … <b>Huang, Y.</b>, … Wilson, R. C. 
-                    </td>
-                </tr>
+            <div class="w3-container" id="service_and_membership">
+                <div class="w3-twothird w3-container">
+                    <div class="subsection-title">Service and Outreach</div>
+                    <table class="w3-table w3-striped">
+                        <tr>
+                            <td><img src="assets/gatech.svg" alt="Georgia Tech Logo" style="height:5rem; margin:16px 16px;"></td>
+                            <td style="vertical-align: middle;">
+                                <div class="entry-title">Graduate Representative</div>
+                                <div class="entry-role">Psychology, Georgia Institute of Technology</div>
+                            </td>
+                            <td style="vertical-align: middle;" class="entry-date">2024 - 2025</td>
+                        </tr>
 
-                <tr>
-                    <td><img src="assets/virtual_navigation.png" alt="Virtual Reality Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td>Leveraging Virtual Reality to Understand Human Spatial Navigation. <div class="table-list-sub">Nature Reviews Psychology (2023)</div> <a href="https://rdcu.be/dnUrW" class="w3-button w3-round-large w3-border cute">PAPER</a> </td>
-                    <td><b>Huang, Y.</b></td>
-                </tr>
-                
-                <!-- <tr>
-                    <td><img src="assets/face.png" alt="Face Recognition Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td>Dynamic Face Perception: The Role of Expertise in Dual Processing of Features and Configuration. <div class="table-list-sub">Journal of Undergraduate Life Sciences (2023)</div> <a href="https://jps.library.utoronto.ca/index.php/juls/article/view/40382/" class="w3-button w3-round-large w3-border cute">PAPER</a> </td>
-                    <td><b>Huang, Y.</b> </td>
-                </tr> -->
+                        <tr>
+                            <td><img src="assets/ua.png" alt="University of Arizona Logo" style="height:5rem; margin:16px 16px;"></td>
+                            <td style="vertical-align: middle;">
+                                <div class="entry-title">Graduate Representative</div>
+                                <div class="entry-role">Psychology, University of Arizona</div>
+                            </td>
+                            <td style="vertical-align: middle;" class="entry-date">2022 - 2024</td>
+                        </tr>
+                    </table>
+                </div>
 
-                <tr>
-                    <td><img src="assets/conversation.png" alt="Social Interaction Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td>Replicability of Two Classic Experiments in Social Psychology: Implicit Association Test and Imagined Contact. 
-                        <div class="table-list-sub">Inkblot: Undergraduate Journal of Psychology (2020)</div> 
-                        <a href="https://osf.io/rsnjc/" class="w3-button w3-round-large w3-border cute">SLIDES</a>
-                        <a href="https://psyarxiv.com/sqny7/" class="w3-button w3-round-large w3-border cute">PAPER</a> 
-                        <a href="https://osf.io/awqzy/" class="w3-button w3-round-large w3-border cute">CODE</a>
-                        <a href="https://osf.io/kpqae/" class="w3-button w3-round-large w3-border cute">DATA</a>
-                    </td>
-                    <td><b>Huang, Y.</b> </td>
-                </tr>
-            </table>
-        </span>
-    </div>
+                <div class="w3-third w3-container">
+                    <div class="subsection-title">Membership</div>
+                    <table class="w3-table w3-striped">
+                        <tr>
+                            <td><img src="assets/SfN.jpeg" alt="SfN Icon" style="height:5rem; margin:16px 16px;"></td>
+                            <td style="vertical-align: middle;">
+                                <div class="entry-title">Society for Neuroscience</div>
+                            </td>
+                        </tr>
 
-    <!-- <div class="w3-container" id="posters">
-        <span class="w3-container" style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 2em;">Posters</span>
-        <span class="table-list">
-            <table class="w3-table w3-striped">
-                <tr>
-                    <td><img src="assets/walking.png" alt="EEG Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td>Control theory model predicts human velocity during multi-sensory navigation in virtual reality. <div class="table-list-sub">Society for Mathematical Psychology Satellite Meeting at Psychonomics, New York, NY, USA</div> <a href="https://mathpsych.org/room/70" class="w3-button w3-round-large w3-border cute">URL</a> </td>
-                    <td><b>Huang, Y.</b>, Du, Y. K., Ekstrom, A., & Wilson, R. (2024).</td>
-                </tr>
+                        <tr>
+                            <td><img src="assets/APA.jpeg" alt="APA Icon" style="height:5rem; margin:16px 16px;"></td>
+                            <td style="vertical-align: middle;">
+                                <div class="entry-title">American Psychological Association</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
 
-                <tr>
-                    <td><img src="assets/eeg.png" alt="EEG Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td>Neural correlates of mismatch detection and integration of visual and body-based cues in virtual reality. <div class="table-list-sub">Society for Neuroscience, Washington, DC, USA</div> </td>
-                    <td><b>Huang, Y.</b>, Du, Y. K., Wilson, R., & Ekstrom, A. (2023).</td>
-                </tr>
-
-                <tr>
-                    <td><img src="assets/time.png" alt="Clock Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td>How do temporal context and event boundaries affect recall richness for Forrest Gump? <div class="table-list-sub">Context and Episodic Memory Symposium, Philadelphia, PA, USA</div> <a href="https://drive.google.com/file/d/1evNwjzXrLMWbc7vlZwrFxz0LD5B2G09j/view?usp=sharing" class="w3-button w3-round-large w3-border cute">PDF</a></td>
-                    <td>Hong, B., Tran, M.A., Cheng, H., <b>Huang, Y.</b>, & Barense, M.D. (2020).</td>
-                </tr>
-
-                <tr>
-                    <td><img src="assets/time.png" alt="Clock Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td>Testing retrieved-context models and event boundaries in naturalistic events​. <div class="table-list-sub">Lake Ontario Visionary Establishment, Niagara Falls, ON, Canada</div> <a href="https://drive.google.com/file/d/1Q67_igMjTapVccL8S_4TWiklScz1MZzI/view?usp=sharing" class="w3-button w3-round-large w3-border cute">PDF</a></td>
-                    <td><b>Huang, Y.</b>, Cheng, H., Tran, M., Hong, B., & Barense, M.D. (2020).</td>
-                </tr>
-
-                <tr>
-                    <td><img src="assets/phone.png" alt="Phone Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td>To cope with stressors at the workplace and at home: ​phone use and its consequences​. <div class="table-list-sub">Smarti Gras, Toronto, ON, Canada</div> <a href="https://drive.google.com/file/d/1Rg8mQ0ZAEKdFkVPo6fUEygA7MrbkhDDz/view?usp=sharing" class="w3-button w3-round-large w3-border cute">PDF</a></td>
-                    <td><b>Huang, Y.</b>, Zhao, X., & Toh, S. M. (2019).</td>
-                </tr>
-            </table>
-        </span>
-    </div> -->
-
-    <div class="w3-container" id="teaching">
-        <span class="w3-container" style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 2em;">Teaching</span>
-        <span class="table-list">
-            <table class="w3-table w3-striped">
-                <tr>
-                    <td><img src="assets/math.png" alt="Math Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td style="vertical-align: middle;">Course: Math of the Mind [16 students]<div class="table-list-sub">Teaching Assistant</div></td>
-                    <td style="vertical-align: middle;">2025 Fall</td>
-                </tr>
-
-                <tr>
-                    <td><img src="assets/methods.png" alt="Methods Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td style="vertical-align: middle;">Course: Research Methods [30 students]<div class="table-list-sub">Teaching Assistant</div></td>
-                    <td style="vertical-align: middle;">2025 Summer</td>
-                </tr>
-
-                <tr>
-                    <td><img src="assets/researcher.png" alt="Researcher Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td style="vertical-align: middle;">Course: Applied Experimental Psychology [40 students]<div class="table-list-sub">Lab Instructor</div></td>
-                    <td style="vertical-align: middle;">2025 Spring</td>
-                </tr>
-
-                <tr>
-                    <td><img src="assets/human.png" alt="Human Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td style="vertical-align: middle;">Course: General Psychology [150 students]<div class="table-list-sub">Teaching Assistant  (Full Course) and Guest Lecturer (Memory)</div></td>
-                    <td style="vertical-align: middle;">2024 Fall</td>
-                </tr>
-
-                <tr>
-                    <td><img src="assets/vestibular.png" alt="Walking Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td style="vertical-align: middle;">Course: Vestibular System [20 students]<div class="table-list-sub">Guest Lecturer</div><div><a href="https://www.youtube.com/watch?v=DY2wQ6zBnWE" class="w3-button w3-round-large w3-border cute">YouTube</a></div></td>
-                    <td style="vertical-align: middle;">2023 Spring</td>
-                </tr>
-
-                <tr>
-                    <td><img src="assets/flask.png" alt="Flask Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td style="vertical-align: middle;">Course: Drugs and the Brain [200 students]<div class="table-list-sub">Teaching Assistant (Full Course) and Guest Lecturer (Psychedelics)</div></td>
-                    <td style="vertical-align: middle;">2023 Spring</td>
-                </tr>
-                
-                <tr>
-                    <td><img src="assets/stats.png" alt="Stats Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td style="vertical-align: middle;">Course: Psychological Measurement and Statistics [200 students]<div class="table-list-sub">Teaching Assistant  (Full Course) and Guest Lecturer (ANOVA)</div></td>
-                    <td style="vertical-align: middle;">2022 Fall</td>
-                </tr>
-
-            </table>
-        </span>
-    </div>
-
-    <div class="w3-container" id="service_and_membership">
-        <div class="w3-twothird w3-container">
-            <div style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 1.6em;">Service and Outreach</div>
-            <table class="w3-table w3-striped">
-                <tr>
-                    <td><img src="assets/gatech.svg" alt="Georgia Tech Logo" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td style="vertical-align: middle;">Graduate Representative <div class="table-list-sub">Psychology, Georgia Institute of Technology</div></td>
-                    <td style="vertical-align: middle;">2024 - 2025</td>
-                </tr>
-
-                <tr>
-                    <td><img src="assets/ua.png" alt="University of Arizona Logo" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td style="vertical-align: middle;">Graduate Representative <div class="table-list-sub">Psychology, University of Arizona</div></td>
-                    <td style="vertical-align: middle;">2022 - 2024</td>
-                </tr>
-            </table>
-        </div>
-        
-        <div class="w3-third w3-container">
-            <div style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 1.6em;">Membership</div>
-            <table class="w3-table w3-striped">
-                <tr>
-                    <td><img src="assets/SfN.jpeg" alt="SfN Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td style="vertical-align: middle;">Society for Neuroscience </td>
-                </tr>
-
-                <tr>
-                    <td><img src="assets/APA.jpeg" alt="APA Icon" class="w3-image; w3-container" style="height:5rem; margin:16px 16px;"></td>
-                    <td style="vertical-align: middle;">American Psychological Association </td>
-                </tr>
-            </table>
-        </div>
+        </main>
     </div>
 
     <footer id="neuro-footer">
@@ -447,15 +735,13 @@
                 <g id="orange-char" transform="translate(16, 205) scale(1.1)">
                     <path d="M25 160 L25 200" stroke="#f29d3e" stroke-width="14" stroke-linecap="round"/>
                     <path d="M55 160 L55 200" stroke="#f29d3e" stroke-width="14" stroke-linecap="round"/>
-                    
                     <g id="orange-arm-l">
                         <path d="M30 100 Q 0 120 85 120" stroke="#F27F3F" stroke-width="14" stroke-linecap="round" fill="none"/>
                     </g>
                     <rect x="10" y="60" width="60" height="110" rx="30" fill="#f29d3e" />
                     <circle cx="50" cy="85" r="2" fill="#333" />
                     <circle cx="60" cy="85" r="2" fill="#333" />
-                    <rect x="53" y="92" width="6" height="2" fill="#333" />
-                    
+                    <rect x="53" y="92" width="6" height="2" rx="1" fill="#333" />
                     <g id="orange-arm-r">
                         <path d="M40 110 Q 60 130 90 140" stroke="#F27F3F" stroke-width="14" stroke-linecap="round" fill="none"/>
                     </g>
@@ -514,33 +800,27 @@
 
                 <g id="diver-group" transform="translate(850, 260) scale(1.05)">
                     <g class="bobbing-wrapper">
-                        <!-- Right leg / flipper -->
                         <g class="leg-group" transform="translate(15, 10)">
                             <rect class="limb-color" x="1" y="65" width="15" height="30" rx="7.5" ry="7.5" />
                             <rect class="flipper-color" x="-1.5" y="90" width="20" height="45" rx="5" ry="15" />
-                            <!-- Flipper stripes (reuse snorkel-tube color) -->
-                            <line class="snorkel-tube" x1="5" y1="110" x2="5" y2="132"
-                                  stroke-width="1.8" stroke-linecap="round" />
-                            <line class="snorkel-tube" x1="12" y1="110" x2="12" y2="132"
-                                  stroke-width="1.8" stroke-linecap="round" />
+                            <line class="snorkel-tube" x1="5" y1="110" x2="5" y2="132" stroke-width="1.8" stroke-linecap="round" />
+                            <line class="snorkel-tube" x1="12" y1="110" x2="12" y2="132" stroke-width="1.8" stroke-linecap="round" />
                         </g>
-                        <!-- Left leg / flipper -->
+
                         <g class="leg-group" transform="translate(-15, 10)" style="animation-delay: -0.4s;">
                             <rect class="limb-color" x="-16" y="65" width="15" height="30" rx="7.5" ry="7.5" />
                             <rect class="flipper-color" x="-18.5" y="90" width="20" height="45" rx="5" ry="15" />
-                            <!-- Flipper stripes (reuse snorkel-tube color) -->
-                            <line class="snorkel-tube" x1="-12" y1="110" x2="-12" y2="132"
-                                  stroke-width="1.8" stroke-linecap="round" />
-                            <line class="snorkel-tube" x1="-5" y1="110" x2="-5" y2="132"
-                                  stroke-width="1.8" stroke-linecap="round" />
+                            <line class="snorkel-tube" x1="-12" y1="110" x2="-12" y2="132" stroke-width="1.8" stroke-linecap="round" />
+                            <line class="snorkel-tube" x1="-5" y1="110" x2="-5" y2="132" stroke-width="1.8" stroke-linecap="round" />
                         </g>
+
                         <rect class="body-color" x="-30" y="-70" width="60" height="140" rx="30" ry="30" />
                         <rect class="strap" x="-30" y="-50" width="22" height="12" rx="3" ry="6" />
                         <rect class="strap" x="8" y="-50" width="22" height="12" rx="3" ry="6" />
                         <rect class="mask-frame" x="-22" y="-57" width="44" height="24" rx="7" ry="7" />
                         <rect class="mask-glass" x="-20" y="-55" width="40" height="20" rx="5" ry="5" />
                         <circle class="eye-color" cx="-8" cy="-45" r="2" />
-                        <circle class="eye-color" cx="8"  cy="-45" r="2" />
+                        <circle class="eye-color" cx="8" cy="-45" r="2" />
                         <path class="snorkel-tube" d="M 0 -30 Q 8.19 -16.70 -1.15 -7.94 Q -10.49 0.82 -30 -4" fill="none" stroke-width="8" stroke-linecap="round" transform="rotateY(180deg)" />
                         <circle class="snorkel-tip" cx="0" cy="-30" r="4" />
                     </g>
@@ -555,51 +835,45 @@
                 <a href="https://github.com/yinqihuang" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/yinqi-huang/" target="_blank">LinkedIn</a>
                 <a href="https://x.com/yinqi_huang" target="_blank">X (Twitter)</a>
+                <a href="https://bsky.app/profile/yinqihuang.bsky.social" target="_blank">Bluesky</a>
+                <a href="assets/Huang_Yinqi_CV.pdf" target="_blank">CV</a>
                 <a href="mailto:yhuang994@gatech.edu?subject=From%20Website" target="_blank">Email</a>
             </div>
             <p class="copyright">© 2026 Yinqi Huang. All rights reserved.</p>
         </div>
     </footer>
-    
+
     <script>
         $(document).ready(function() {
-            // Function to set all cards within a container to the height of the tallest card
             function setEqualHeight() {
                 if ($(window).width() < 601) {
-                     // On mobile, reset heights to auto so they can expand naturally
-                     $('.card').css('height', 'auto');
-                     return; 
+                    $('.card').css('height', 'auto');
+                    return;
                 }
 
-                // Research Cards
                 var maxResearchHeight = 0;
                 $('#research .card').each(function() {
-                    $(this).css('height', 'auto'); // Reset first
+                    $(this).css('height', 'auto');
                     if ($(this).height() > maxResearchHeight) {
                         maxResearchHeight = $(this).height();
                     }
                 });
-                if(maxResearchHeight > 0) $('#research .card').height(maxResearchHeight);
+                if (maxResearchHeight > 0) $('#research .card').height(maxResearchHeight);
 
-                // Awards Cards
                 var maxAwardsHeight = 0;
                 $('#awards .card').each(function() {
-                    $(this).css('height', 'auto'); // Reset first
+                    $(this).css('height', 'auto');
                     if ($(this).height() > maxAwardsHeight) {
                         maxAwardsHeight = $(this).height();
                     }
                 });
-                if(maxAwardsHeight > 0) $('#awards .card').height(maxAwardsHeight);
+                if (maxAwardsHeight > 0) $('#awards .card').height(maxAwardsHeight);
             }
-            
-            // Call the function on page load
-            // Adding a slight delay to ensure images load first
+
             setTimeout(setEqualHeight, 200);
-            
-            // Call again on window resize
             $(window).resize(setEqualHeight);
         });
-        
+
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
@@ -613,7 +887,6 @@
     </script>
 
     <script>
-        // DOM ELEMENTS
         const yellowBody = document.getElementById('yellow-char');
         const yellowHead = document.getElementById('yellow-head-group');
         const greenHands = document.getElementById('green-arms');
@@ -638,10 +911,8 @@
             const elapsed = timestamp - startTime;
             const t = elapsed / 1000;
 
-            // Removed Yellow breathing effect, kept static position
             yellowBody.setAttribute('transform', 'translate(490, 247)');
 
-            // Head rotation cycle
             const cycle = elapsed % HEAD_CYCLE_DURATION;
             let headRotation = 0;
 
@@ -654,61 +925,229 @@
 
             yellowHead.setAttribute('transform', `rotate(${headRotation})`);
 
-            // Green hands fidget
             const fiddleX = sine(elapsed, 0.015) * 2;
             const fiddleY = sine(elapsed, 0.02) * 2;
             greenHands.setAttribute('transform', `translate(${-40 + headRotation * 0.8 + fiddleX}, ${40 + fiddleY})`);
 
-            // Orange typing
             const oArmL_Y = Math.abs(sine(elapsed, 0.012) * 3);
             const oArmR_Y = Math.abs(sine(elapsed + 100, 0.012) * 3);
             orangeArmL.setAttribute('transform', `translate(0, ${oArmL_Y})`);
             orangeArmR.setAttribute('transform', `translate(0, ${oArmR_Y})`);
 
-            // Robot arms
             const baseX = 100;
             const baseY = 120;
 
-            // LEFT ARM (on the left side, reaching inward to the right)
-            const angle1_upper =  40 + 6 * Math.sin(t * 0.8) + 180;      // tilt right
-            const angle1_mid   = -35 + 8 * Math.sin(t * 1.1);      // bend inward
-            const angle1_wrist = -10 + 10 * Math.sin(t * 1.3) + 180;     // small wrist motion
+            const angle1_upper = 40 + 6 * Math.sin(t * 0.8) + 180;
+            const angle1_mid = -35 + 8 * Math.sin(t * 1.1);
+            const angle1_wrist = -10 + 10 * Math.sin(t * 1.3) + 180;
 
-            arm1_seg1.setAttribute(
-                'transform',
-                `translate(${baseX},${baseY}) rotate(${angle1_upper})`
-            );
-            arm1_seg2.setAttribute(
-                'transform',
-                `translate(0,-60) rotate(${angle1_mid})`
-            );
-            arm1_seg3.setAttribute(
-                'transform',
-                `translate(0,-48) rotate(${angle1_wrist})`
-            );
+            arm1_seg1.setAttribute('transform', `translate(${baseX},${baseY}) rotate(${angle1_upper})`);
+            arm1_seg2.setAttribute('transform', `translate(0,-60) rotate(${angle1_mid})`);
+            arm1_seg3.setAttribute('transform', `translate(0,-48) rotate(${angle1_wrist})`);
 
-            // RIGHT ARM (on the right side, reaching inward to the left)
-            const angle2_upper = -40 + 5 * Math.sin(t * 0.7 + 0.8) + 180;  // tilt left
-            const angle2_mid   =  35 + 7 * Math.sin(t * 1.0 + 1.2);  // bend inward
-            const angle2_wrist =  10 + 9 * Math.sin(t * 1.25 + 1.8); // small wrist motion
+            const angle2_upper = -40 + 5 * Math.sin(t * 0.7 + 0.8) + 180;
+            const angle2_mid = 35 + 7 * Math.sin(t * 1.0 + 1.2);
+            const angle2_wrist = 10 + 9 * Math.sin(t * 1.25 + 1.8);
 
-            arm2_seg1.setAttribute(
-                'transform',
-                `translate(${baseX},${baseY}) rotate(${angle2_upper})`
-            );
-            arm2_seg2.setAttribute(
-                'transform',
-                `translate(0,-60) rotate(${angle2_mid})`
-            );
-            arm2_seg3.setAttribute(
-                'transform',
-                `translate(0,-48) rotate(${angle2_wrist})`
-            );
-
+            arm2_seg1.setAttribute('transform', `translate(${baseX},${baseY}) rotate(${angle2_upper})`);
+            arm2_seg2.setAttribute('transform', `translate(0,-60) rotate(${angle2_mid})`);
+            arm2_seg3.setAttribute('transform', `translate(0,-48) rotate(${angle2_wrist})`);
 
             requestAnimationFrame(animate);
         }
         requestAnimationFrame(animate);
     </script>
+
+    <script>
+    const jellyMini = document.getElementById('jellyMiniGroup');
+    const jellyBodyMini = document.getElementById('jellyBodyMini');
+    const tentaclesMini = document.getElementById('tentaclesMini');
+    const tentacleDotsMini = document.getElementById('tentacleDotsMini');
+
+    const tentacles = [];
+    const tentacleDots = [];
+
+    // ---- tentacle settings ----
+    const nTentacles = 4;
+    const spacing = 20;
+    const offset = (nTentacles - 1) / 2;
+
+    for (let i = 0; i < nTentacles; i++) {
+        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute('fill', 'none');
+        path.setAttribute('stroke', 'url(#tentacleGradientMini)');
+        path.setAttribute('stroke-linecap', 'round');
+        path.setAttribute('stroke-width', '6');
+        tentaclesMini.appendChild(path);
+
+        const dot1 = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        dot1.setAttribute('r', '3.8');
+        dot1.setAttribute('fill', 'white');
+        dot1.setAttribute('opacity', '0.9');
+        tentacleDotsMini.appendChild(dot1);
+
+        const dot2 = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        dot2.setAttribute('r', '3');
+        dot2.setAttribute('fill', 'white');
+        dot2.setAttribute('opacity', '0.8');
+        tentacleDotsMini.appendChild(dot2);
+
+        const dot3 = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        dot3.setAttribute('r', '2.5');
+        dot3.setAttribute('fill', 'white');
+        dot3.setAttribute('opacity', '0.75');
+        tentacleDotsMini.appendChild(dot3);
+
+        tentacles.push({
+            el: path,
+            x: (i - offset) * spacing,
+            phase: Math.random() * Math.PI * 2
+        });
+
+        tentacleDots.push([dot1, dot2, dot3]);
+    }
+
+    function getBody(t) {
+        const pulse = Math.sin(t * 2.4);
+
+        const side = 94 + pulse * 4.5;
+        const top = -108 + pulse * 4.0;
+        const ctrlSide = side + 10;
+
+        const outerY = 6;
+        const rimA = 22 + Math.sin(t * 3.0) * 1.2;
+        const rimB = 21 + Math.sin(t * 3.0 + 0.5) * 0.9;
+        const rimC = 21.5 + Math.sin(t * 3.0 + 0.9) * 0.7;
+        const centerY = 12.5 + pulse * 1.0;
+
+        return `
+            M ${-side} ${outerY}
+            C ${-ctrlSide} -54, -84 ${top}, 0 ${top}
+            C 84 ${top}, ${ctrlSide} -54, ${side} ${outerY}
+            C 70 ${rimA}, 42 ${rimB}, 18 ${rimC}
+            C 4 ${centerY}, -4 ${centerY}, -18 ${rimC}
+            C -42 ${rimB}, -70 ${rimA}, ${-side} ${outerY}
+            Z
+        `;
+    }
+
+    function bezierPoint(p0, p1, p2, p3, s) {
+        const x =
+            Math.pow(1 - s, 3) * p0.x +
+            3 * Math.pow(1 - s, 2) * s * p1.x +
+            3 * (1 - s) * Math.pow(s, 2) * p2.x +
+            Math.pow(s, 3) * p3.x;
+
+        const y =
+            Math.pow(1 - s, 3) * p0.y +
+            3 * Math.pow(1 - s, 2) * s * p1.y +
+            3 * (1 - s) * Math.pow(s, 2) * p2.y +
+            Math.pow(s, 3) * p3.y;
+
+        return { x, y };
+    }
+
+    function animateJellyMini(time) {
+        const t = time * 0.001;
+
+        jellyMini.setAttribute(
+            "transform",
+            `translate(${300 + Math.sin(t) * 5} ${290 + Math.sin(t * 1.2) * 10})`
+        );
+
+        jellyBodyMini.setAttribute("fill", "url(#jellyBodyGradientMini)");
+        jellyBodyMini.setAttribute("d", getBody(t));
+
+        tentacles.forEach((tent, i) => {
+            const sway = Math.sin(t * 2 + tent.phase) * 10;
+
+            const p0 = { x: tent.x, y: 0 };
+            const p1 = { x: tent.x + sway, y: 40 };
+            const p2 = { x: tent.x - sway, y: 80 };
+            const p3 = { x: tent.x, y: 120 };
+
+            tent.el.setAttribute("d", `
+                M ${p0.x} ${p0.y}
+                C ${p1.x} ${p1.y},
+                ${p2.x} ${p2.y},
+                ${p3.x} ${p3.y}
+            `);
+
+            const positions = [0.28, 0.55, 0.8];
+            positions.forEach((s, j) => {
+                const pt = bezierPoint(p0, p1, p2, p3, s);
+                tentacleDots[i][j].setAttribute("cx", pt.x);
+                tentacleDots[i][j].setAttribute("cy", pt.y);
+            });
+        });
+
+        requestAnimationFrame(animateJellyMini);
+    }
+
+    requestAnimationFrame(animateJellyMini);
+    </script>
+
+    <script>
+    (function () {
+        const track = document.getElementById('photoCarouselTrack');
+        const slides = Array.from(track.querySelectorAll('.photo-slide'));
+        const dots = Array.from(document.querySelectorAll('#photoCarouselDots .carousel-dot'));
+        const prevBtn = document.querySelector('.carousel-btn-prev');
+        const nextBtn = document.querySelector('.carousel-btn-next');
+
+        let currentIndex = 0;
+        let autoPlay;
+
+        function updateCarousel(index) {
+            currentIndex = (index + slides.length) % slides.length;
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentIndex);
+            });
+        }
+
+        function nextSlide() {
+            updateCarousel(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            updateCarousel(currentIndex - 1);
+        }
+
+        function startAutoPlay() {
+            stopAutoPlay();
+            autoPlay = setInterval(nextSlide, 4500);
+        }
+
+        function stopAutoPlay() {
+            if (autoPlay) clearInterval(autoPlay);
+        }
+
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            startAutoPlay();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            startAutoPlay();
+        });
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                updateCarousel(i);
+                startAutoPlay();
+            });
+        });
+
+        track.addEventListener('mouseenter', stopAutoPlay);
+        track.addEventListener('mouseleave', startAutoPlay);
+
+        updateCarousel(0);
+        startAutoPlay();
+    })();
+    </script>
+
 </body>
 </html>
