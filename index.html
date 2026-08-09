@@ -82,6 +82,61 @@
             }
         }
 
+        .paper-chatbox h2 {
+            color: #5e2ced;
+            font-weight: 700;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+
+        .paper-chatbox {
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(218, 225, 246, 0.34));
+        }
+
+        .paper-chatbox-header {
+            margin-bottom: 0;
+        }
+
+        .paper-chat-status {
+            margin-top: 0;
+            transform: translateY(-2px);
+        }
+
+        .paper-chatbox-dot {
+            position: relative;
+            width: 30px;
+            height: 28px;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .paper-chatbox-dot::before,
+        .paper-chatbox-dot::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .paper-chatbox-dot::before {
+            right: 2px;
+            top: 2px;
+            width: 16px;
+            height: 16px;
+            background: rgba(230, 241, 74, 0.74);
+            box-shadow: none;
+        }
+
+        .paper-chatbox-dot::after {
+            left: 3px;
+            bottom: 3px;
+            width: 22px;
+            height: 22px;
+            background: rgba(159, 98, 240, 0.24);
+            box-shadow: none;
+        }
+
         .roadmap-mobile-folders {
             display: none;
         }
@@ -192,15 +247,14 @@
             <section class="paper-chatbox" aria-labelledby="paper-chat-title">
                 <div class="paper-chatbox-header">
                     <div>
-                        <div class="paper-chatbox-kicker">Paper assistant</div>
-                        <h2 id="paper-chat-title">Research assistant</h2>
+                        <h2 id="paper-chat-title">Paper assistant</h2>
                     </div>
                     <span class="paper-chatbox-dot" aria-hidden="true"></span>
                 </div>
-                <div class="paper-chat-status" id="paperChatStatus">Questions are sent to Puter’s AI service.</div>
+                <div class="paper-chat-status" id="paperChatStatus">Questions are sent to Gemini.</div>
                 <div class="paper-chat-messages" id="paperChatMessages" aria-live="polite">
                     <div class="paper-chat-message assistant">
-                        Ask about methods, results, conclusions, data, or code. I will cite the relevant paper and link to the PDF or repository when available.
+                        Ask about study methods, results, data, or code. I will cite the relevant paper and link to the PDF or repository when available.
                     </div>
                 </div>
                 <div class="paper-chat-prompts" aria-label="Example questions">
@@ -213,7 +267,7 @@
                     <textarea id="paperChatInput" rows="2" placeholder="Ask about a paper..." required></textarea>
                     <button type="submit" aria-label="Send paper question">Ask</button>
                 </form>
-                <p class="paper-chat-note">Questions may require a free Puter sign-in. Do not submit private, medical, or confidential information.</p>
+                <p class="paper-chat-note">Questions may require a free Puter sign-in. Do not submit confidential information.</p>
             </section>
         </aside>
 
