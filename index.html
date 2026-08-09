@@ -19,6 +19,69 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/f5ea91e308.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://js.puter.com/v2/"></script>
+    <style>
+        @media (min-width: 901px) {
+            .profile-column {
+                top: 58px;
+                min-height: calc(100vh - 58px);
+                padding: 22px 16px 72px 64px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 22px;
+            }
+
+            #photo {
+                width: 100%;
+            }
+
+            #photo img {
+                margin-top: 0 !important;
+            }
+
+            .paper-chatbox {
+                width: min(100%, 335px);
+                max-width: calc(100vw - 96px);
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+
+            .paper-chat-messages {
+                max-height: 210px;
+            }
+        }
+
+        @media (min-width: 901px) and (max-height: 760px) {
+            .profile-column {
+                justify-content: flex-start;
+                padding-top: 18px;
+                padding-bottom: 52px;
+            }
+
+            .paper-chat-messages {
+                max-height: 165px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .profile-column {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding-bottom: 34px;
+            }
+
+            .paper-chatbox {
+                width: min(100%, 420px);
+                max-width: calc(100vw - 48px);
+                margin-top: 0;
+                margin-bottom: 8px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -68,6 +131,33 @@
                     <a href="assets/Huang_Yinqi_CV.pdf" target="_blank">CV</a>
                 </div>
             </div>
+
+            <section class="paper-chatbox" aria-labelledby="paper-chat-title">
+                <div class="paper-chatbox-header">
+                    <div>
+                        <div class="paper-chatbox-kicker">Paper Q&A</div>
+                        <h2 id="paper-chat-title">Ask my papers</h2>
+                    </div>
+                    <span class="paper-chatbox-dot" aria-hidden="true"></span>
+                </div>
+                <div class="paper-chat-status" id="paperChatStatus">Powered by Gemini via Puter.js</div>
+                <div class="paper-chat-messages" id="paperChatMessages" aria-live="polite">
+                    <div class="paper-chat-message assistant">
+                        Ask about methods, results, conclusions, data, or code. I will cite the relevant paper and link to the PDF or repository when available.
+                    </div>
+                </div>
+                <div class="paper-chat-prompts" aria-label="Example questions">
+                    <button type="button" data-paper-prompt="What did the control theory navigation paper find?">Navigation</button>
+                    <button type="button" data-paper-prompt="What methods were used in the teleoperation paper?">Teleoperation</button>
+                    <button type="button" data-paper-prompt="Which papers include data or code links?">Data/code</button>
+                </div>
+                <form class="paper-chat-form" id="paperChatForm">
+                    <label class="sr-only" for="paperChatInput">Ask a question about Yinqi Huang's papers</label>
+                    <textarea id="paperChatInput" rows="2" placeholder="Ask about a paper..." required></textarea>
+                    <button type="submit" aria-label="Send paper question">Ask</button>
+                </form>
+                <p class="paper-chat-note">Uses local PDFs in <code>papers/</code>; visitors may be asked to sign in to Puter.</p>
+            </section>
         </aside>
 
         <main class="content-column">
@@ -289,7 +379,7 @@
         </g>
         <g class="project" tabindex="0">
           <path class="project-line" d="M 395 920 C 404 904 421 890 429 890"/>
-          <foreignObject x="414" y="816" width="310" height="140" class="project-card-wrap"><div xmlns="http://www.w3.org/1999/xhtml" class="project-stack project-stack-hand"><div class="folder-sheet folder-sheet-one"></div><div class="folder-sheet folder-sheet-two"></div><a class="paper-card paper-card-one" href="#paper-hand-1">Future project</a><a class="paper-card paper-card-two" href="#paper-hand-2">Future project</a><a class="paper-card paper-card-three" href="https://doi.org/10.1038/s41539-026-00442-6" target="_blank" rel="noopener">Teleoperation of surgical robots. npj Science of Learning (2026)</a><div class="project-folder"><div class="project-folder-tab"></div><div class="project-folder-label">✋ Hands</div></div></div></foreignObject>
+          <foreignObject x="414" y="816" width="310" height="140" class="project-card-wrap"><div xmlns="http://www.w3.org/1999/xhtml" class="project-stack project-stack-hand"><div class="folder-sheet folder-sheet-one"></div><div class="folder-sheet folder-sheet-two"></div><a class="paper-card paper-card-one" href="#paper-hand-1">Future project</a><a class="paper-card paper-card-two" href="papers/2026_Human_Teleoperation.pdf" target="_blank" rel="noopener">Teleoperation PDF</a><a class="paper-card paper-card-three" href="https://doi.org/10.1038/s41539-026-00442-6" target="_blank" rel="noopener">Teleoperation of surgical robots. npj Science of Learning (2026)</a><div class="project-folder"><div class="project-folder-tab"></div><div class="project-folder-label">✋ Hands</div></div></div></foreignObject>
         </g>
         <g class="project" tabindex="0">
           <path class="project-line" d="M 401 839 C 418 846 439 842 449 846"/>
@@ -462,7 +552,8 @@
                                 We investigate how people turn spatial estimation into action during navigation. By combining virtual reality experiments with a control-theoretic model, we show that visual prediction errors trigger rapid movement corrections and that navigation is best understood as a continuous feedback-control process. This work connects theories of motor control and cue combination during navigation.
                             </div>
                             <div class="publication-inline-links-custom">
-                                <a href="https://www.biorxiv.org/content/10.64898/2026.06.02.729319v1" target="_blank" rel="noopener">bioRxiv</a> 
+                                <a href="https://www.biorxiv.org/content/10.64898/2026.06.02.729319v1" target="_blank" rel="noopener">bioRxiv</a> |
+                                <a href="papers/2026_Control_Rotational_Navigation.pdf" target="_blank" rel="noopener">PDF</a>
                                 <!-- | <a href="https://osf.io/pm69n/overview">DATA</a> -->
                             </div>
                         </div>
@@ -482,7 +573,7 @@
                                 We investigate how people learn to operate surgical robots and how interface design affects learning. By combining teleoperation experiments with computational modeling, we show that a simple control-theoretic model captures human skill acquisition and transfer. These findings provide a foundation for designing curricula that better support surgical training.
                             </div>
                             <div class="publication-inline-links-custom">
-                                <a href="https://doi.org/10.1038/s41539-026-00442-6" target="_blank" rel="noopener">DOI</a> | <a href="https://osf.io/acuyr/overview" target="_blank" rel="noopener">DATA</a>
+                                <a href="https://doi.org/10.1038/s41539-026-00442-6" target="_blank" rel="noopener">DOI</a> | <a href="papers/2026_Human_Teleoperation.pdf" target="_blank" rel="noopener">PDF</a> | <a href="https://osf.io/acuyr/overview" target="_blank" rel="noopener">DATA</a>
                             </div>
                         </div>
                     </div>
@@ -501,7 +592,8 @@
                                 We investigate how people combine self-motion and visual landmarks when estimating distance. Using immersive virtual reality and computational modeling, we show that most individuals weight these information sources according to their uncertainty, consistent with Bayesian cue combination. These findings help explain why people navigate differently under ambiguous sensory information.
                             </div>
                             <div class="publication-inline-links-custom">
-                                <a href="https://doi.org/10.1016/j.neuropsychologia.2025.109351" target="_blank" rel="noopener">DOI</a>
+                                <a href="https://doi.org/10.1016/j.neuropsychologia.2025.109351" target="_blank" rel="noopener">DOI</a> |
+                                <a href="papers/2026_Bayesian_Cue_Combination.pdf" target="_blank" rel="noopener">PDF</a>
                             </div>
                         </div>
                     </div>
@@ -1146,6 +1238,350 @@
 
         updateCarousel(0);
         startAutoPlay();
+    })();
+    </script>
+
+    <script>
+    (function () {
+        const papers = [
+            {
+                id: 'control-navigation',
+                year: 2026,
+                title: 'Modeling the journey as well as the destination: a control theory account of rotational navigation',
+                shorthand: 'Control theory account of rotational navigation',
+                authors: 'Huang, Y., Vishwanath, A., Du, Y. K., Watson, M. F., Asiri, O., Dakin, K., Markham, D., Ekstrom, A. D., & Wilson, R. C.',
+                venue: 'bioRxiv preprint / under review',
+                pdf: 'papers/2026_Control_Rotational_Navigation.pdf',
+                links: [
+                    { label: 'PDF', url: 'papers/2026_Control_Rotational_Navigation.pdf' },
+                    { label: 'bioRxiv', url: 'https://www.biorxiv.org/content/10.64898/2026.06.02.729319v1' },
+                    { label: 'GitHub repository', url: 'https://github.com/yinqihuang/VR' }
+                ],
+                tags: ['navigation', 'control theory', 'virtual reality', 'prediction error', 'visual feedback', 'rotational navigation', 'closed-loop control'],
+                context: 'Participants performed a goal-directed rotation task in virtual reality. Visual landmarks were shifted on selected trials to test whether sensory prediction errors updated ongoing movement. The paper models navigation as closed-loop control: heading estimates are transformed into action, action changes sensory input, and visual prediction errors drive rapid corrections. The GitHub repository listed in the paper is github.com/yinqihuang/VR.'
+            },
+            {
+                id: 'teleoperation',
+                year: 2026,
+                title: 'Human learning dynamics during teleoperation of surgical robots',
+                shorthand: 'Human learning dynamics during teleoperation',
+                authors: 'Huang, Y., Cai, Y., Li, M., Chen, Y., & Wilson, R. C.',
+                venue: 'npj Science of Learning',
+                doi: 'https://doi.org/10.1038/s41539-026-00442-6',
+                pdf: 'papers/2026_Human_Teleoperation.pdf',
+                links: [
+                    { label: 'PDF', url: 'papers/2026_Human_Teleoperation.pdf' },
+                    { label: 'DOI', url: 'https://doi.org/10.1038/s41539-026-00442-6' },
+                    { label: 'Data', url: 'https://osf.io/acuyr/overview' }
+                ],
+                tags: ['teleoperation', 'surgical robots', 'da Vinci', 'motor learning', 'control theory', 'human-robot interaction', 'skill learning'],
+                context: 'This npj Science of Learning paper studies how people learn to control robotic arms during da Vinci Surgical System teleoperation. It uses control-theoretic modeling to characterize motor skill learning and transfer in human-robot interaction. The site lists an OSF data link for this project; no GitHub repository is listed in the local PDFs or website.'
+            },
+            {
+                id: 'bayesian-cue-combination',
+                year: 2026,
+                title: 'Bayesian cue combination best predicts straight-line distance estimation with translated visual landmarks',
+                shorthand: 'Bayesian cue combination in distance estimation',
+                authors: 'Vishwanath, A., Watson, M. F., Gin, M. K., Markham, D. C., Huang, Y., Du, Y. K., Ekstrom, A. D., & Wilson, R. C.',
+                venue: 'Neuropsychologia',
+                doi: 'https://doi.org/10.1016/j.neuropsychologia.2025.109351',
+                pdf: 'papers/2026_Bayesian_Cue_Combination.pdf',
+                links: [
+                    { label: 'PDF', url: 'papers/2026_Bayesian_Cue_Combination.pdf' },
+                    { label: 'DOI', url: 'https://doi.org/10.1016/j.neuropsychologia.2025.109351' }
+                ],
+                tags: ['navigation', 'bayesian cue combination', 'distance estimation', 'landmarks', 'path integration', 'virtual reality', 'computational modeling'],
+                context: 'This Neuropsychologia paper uses a controlled straight-line distance-estimation task in immersive virtual reality to test how body-based idiothetic cues and visual landmark cues are combined. Bayesian cue combination best explained performance, supporting uncertainty-weighted integration of self-motion and visual landmarks.'
+            },
+            {
+                id: 'scientific-understanding',
+                year: 2026,
+                title: 'Scientific understanding as designed projection',
+                shorthand: 'Scientific understanding and projection spaces',
+                authors: 'Huang, Y.',
+                venue: 'Computational Brain & Behavior',
+                doi: 'https://doi.org/10.1007/s42113-026-00299-3',
+                pdf: 'papers/2026_Scientific_Understanding_Projection.pdf',
+                links: [
+                    { label: 'PDF', url: 'papers/2026_Scientific_Understanding_Projection.pdf' },
+                    { label: 'DOI', url: 'https://doi.org/10.1007/s42113-026-00299-3' }
+                ],
+                tags: ['scientific understanding', 'projection', 'modeling', 'philosophy of science', 'partial observability'],
+                context: 'This short Computational Brain & Behavior piece argues that limitations in scientific understanding are better interpreted as projection under partial observability rather than illusion. It frames scientific progress as improving and switching projection spaces.'
+            },
+            {
+                id: 'temporal-proximity',
+                year: 2025,
+                title: 'Temporal proximity affects the detailed recall of events in a nested hierarchy',
+                shorthand: 'Temporal proximity in nested events',
+                authors: 'Hong, B., Tran, M. A., Cheng, H., Huang, Y., & Barense, M. D.',
+                venue: 'Manuscript',
+                pdf: 'papers/2025_Temporal_Proximity_Nested_Events.pdf',
+                links: [
+                    { label: 'PDF', url: 'papers/2025_Temporal_Proximity_Nested_Events.pdf' },
+                    { label: 'Data', url: 'https://osf.io/yfn6m/' }
+                ],
+                tags: ['memory', 'event cognition', 'nested events', 'temporal proximity', 'event boundaries', 'Forrest Gump'],
+                context: 'This manuscript tests how temporal proximity and event boundaries affect detailed recall for events in Forrest Gump. The recall order manipulated similarity between adjacent cued events within a nested event hierarchy. The paper reports an open-access dataset at OSF.'
+            },
+            {
+                id: 'vr-spatial-navigation-review',
+                year: 2023,
+                title: 'Leveraging virtual reality to understand human spatial navigation',
+                shorthand: 'VR for human spatial navigation',
+                authors: 'Huang, Y.',
+                venue: 'Nature Reviews Psychology',
+                doi: 'https://doi.org/10.1038/s44159-023-00243-3',
+                pdf: 'papers/2023_VR_Spatial_Navigation.pdf',
+                links: [
+                    { label: 'PDF', url: 'papers/2023_VR_Spatial_Navigation.pdf' },
+                    { label: 'DOI', url: 'https://doi.org/10.1038/s44159-023-00243-3' }
+                ],
+                tags: ['virtual reality', 'spatial navigation', 'place cells', 'grid cells', 'human cognition', 'journal club'],
+                context: 'This Nature Reviews Psychology Journal Club article explains how virtual reality enables more naturalistic and controlled studies of human spatial navigation, especially when conventional neural recording constraints make real movement difficult.'
+            },
+            {
+                id: 'dynamic-face-perception',
+                year: 2023,
+                title: 'Dynamic Face Perception: The Role of Expertise in Dual Processing of Features and Configuration',
+                shorthand: 'Dynamic face perception',
+                authors: 'Huang, Y.',
+                venue: 'Journal of Undergraduate Life Sciences',
+                doi: 'https://doi.org/10.33137/juls.v16i1.40382',
+                pdf: 'papers/2023_Dynamic_Face_Perception.pdf',
+                links: [
+                    { label: 'PDF', url: 'papers/2023_Dynamic_Face_Perception.pdf' },
+                    { label: 'DOI', url: 'https://doi.org/10.33137/juls.v16i1.40382' }
+                ],
+                tags: ['face perception', 'expertise', 'configural processing', 'featural processing', 'review'],
+                context: 'This review discusses face perception mechanisms, focusing on featural and configural processing and how expertise may influence dynamic face perception.'
+            },
+            {
+                id: 'indian-act',
+                year: 2022,
+                title: 'The Indian Act and Racialized Indigenous Rights: the Wet’suwet’en pipeline protest',
+                shorthand: 'Indian Act and Indigenous rights',
+                authors: 'Huang, Y.',
+                venue: 'Young Anthropology',
+                pdf: 'papers/2022_Indian_Act_Indigenous_Rights.pdf',
+                links: [
+                    { label: 'PDF', url: 'papers/2022_Indian_Act_Indigenous_Rights.pdf' }
+                ],
+                tags: ['anthropology', 'Indigenous rights', 'Indian Act', 'Wet’suwet’en', 'pipeline protest', 'racial capitalism'],
+                context: 'This article applies Nancy Fraser’s expropriation-exploitation model to relations between the Canadian government and Indigenous peoples, focusing on the Indian Act and the Wet’suwet’en pipeline protest.'
+            },
+            {
+                id: 'social-psychology-replication',
+                year: 2020,
+                title: 'Replicability of Two Classic Experiments in Social Psychology: Implicit Association Test and Imagined Contact',
+                shorthand: 'Social psychology replication',
+                authors: 'Huang, Y.',
+                venue: 'Inkblot: Undergraduate Journal of Psychology',
+                pdf: 'papers/2020_Replicability_Social_Psychology.pdf',
+                links: [
+                    { label: 'PDF', url: 'papers/2020_Replicability_Social_Psychology.pdf' }
+                ],
+                tags: ['social psychology', 'replication', 'implicit association test', 'imagined contact', 'intergroup bias'],
+                context: 'This study examines replication of gender-science Implicit Association Test effects and Imagined Contact effects on intergroup bias, including how participant-experimenter gender interactions affect explicit and implicit measures.'
+            }
+        ];
+
+        const form = document.getElementById('paperChatForm');
+        const input = document.getElementById('paperChatInput');
+        const messages = document.getElementById('paperChatMessages');
+        const status = document.getElementById('paperChatStatus');
+        const promptButtons = document.querySelectorAll('[data-paper-prompt]');
+
+        if (!form || !input || !messages || !status) return;
+
+        const history = [];
+
+        function escapeHtml(text) {
+            return text
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+        }
+
+        function renderAssistantText(text) {
+            const escaped = escapeHtml(text);
+            return escaped
+                .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+|papers\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+                .replace(/\n/g, '<br>');
+        }
+
+        function addMessage(role, text) {
+            const node = document.createElement('div');
+            node.className = `paper-chat-message ${role}`;
+            node.innerHTML = role === 'assistant' ? renderAssistantText(text) : escapeHtml(text);
+            messages.appendChild(node);
+            messages.scrollTop = messages.scrollHeight;
+            return node;
+        }
+
+        function setBusy(isBusy, text) {
+            form.querySelector('button').disabled = isBusy;
+            input.disabled = isBusy;
+            status.textContent = text;
+        }
+
+        function paperScore(paper, query) {
+            const haystack = `${paper.title} ${paper.shorthand} ${paper.venue} ${paper.tags.join(' ')} ${paper.context}`.toLowerCase();
+            const terms = query.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+            return terms.reduce((score, term) => score + (haystack.includes(term) ? 1 : 0), 0);
+        }
+
+        function selectPapers(query) {
+            const ranked = papers
+                .map((paper) => ({ paper, score: paperScore(paper, query) }))
+                .sort((a, b) => b.score - a.score || b.paper.year - a.paper.year);
+            const selected = ranked.filter((item) => item.score > 0).slice(0, 3).map((item) => item.paper);
+            return selected.length ? selected : papers.slice(0, 4);
+        }
+
+        function paperCatalogText(selected) {
+            return selected.map((paper) => {
+                const links = paper.links.map((link) => `${link.label}: ${link.url}`).join('; ');
+                return [
+                    `Paper: ${paper.title}`,
+                    `Year: ${paper.year}`,
+                    `Authors: ${paper.authors}`,
+                    `Venue: ${paper.venue}`,
+                    paper.doi ? `DOI: ${paper.doi}` : '',
+                    `Links: ${links}`,
+                    `Context: ${paper.context}`
+                ].filter(Boolean).join('\n');
+            }).join('\n\n---\n\n');
+        }
+
+        async function uploadPdfForPuter(paper) {
+            if (!paper.pdf || !window.puter || !puter.fs) return null;
+            const response = await fetch(paper.pdf);
+            if (!response.ok) throw new Error(`Could not load ${paper.pdf}`);
+            const blob = await response.blob();
+            const filename = paper.pdf.split('/').pop();
+            const file = new File([blob], filename, { type: 'application/pdf' });
+            const remote = await puter.fs.write(`paper_assistant_${Date.now()}_${filename}`, file);
+            return remote.path;
+        }
+
+        async function askGemini(question) {
+            if (!window.puter || !puter.ai || !puter.ai.chat) {
+                throw new Error('Puter.js is not available yet. Please check the network connection and try again.');
+            }
+
+            const selected = selectPapers(question);
+            const pdfCandidates = selected.filter((paper) => paper.pdf).slice(0, 2);
+            const uploadedPaths = [];
+
+            try {
+                for (const paper of pdfCandidates) {
+                    try {
+                        const path = await uploadPdfForPuter(paper);
+                        if (path) uploadedPaths.push({ path, paper });
+                    } catch (error) {
+                        console.warn('Paper PDF upload skipped:', error);
+                    }
+                }
+
+                const fileParts = uploadedPaths.map((item) => ({
+                    type: 'file',
+                    puter_path: item.path
+                }));
+
+                const prompt = `You are the paper Q&A assistant on Yinqi Huang's personal website.
+Answer only from the provided paper catalog and attached PDFs. If a detail is not available, say so clearly.
+Always name the paper(s) you are referring to.
+When relevant, include links in Markdown format to the paper PDF, DOI/bioRxiv page, data, and GitHub repository if available in the catalog.
+Keep the answer concise, accurate, and useful for a website visitor.
+
+Relevant paper catalog:
+${paperCatalogText(selected)}
+
+Question: ${question}`;
+
+                const content = fileParts.length
+                    ? [...fileParts, { type: 'text', text: prompt }]
+                    : prompt;
+
+                const response = await puter.ai.chat([
+                    {
+                        role: 'system',
+                        content: 'You answer questions about Yinqi Huang’s published papers using supplied PDFs and catalog metadata. Do not fabricate paper details, data links, or repository links.'
+                    },
+                    ...history.slice(-4),
+                    {
+                        role: 'user',
+                        content
+                    }
+                ], {
+                    model: 'google/gemini-3.6-flash',
+                    temperature: 0.2,
+                    max_tokens: 750
+                });
+
+                return extractResponseText(response);
+            } finally {
+                for (const item of uploadedPaths) {
+                    try {
+                        await puter.fs.delete(item.path);
+                    } catch (error) {
+                        console.warn('Temporary Puter PDF cleanup skipped:', error);
+                    }
+                }
+            }
+        }
+
+        function extractResponseText(response) {
+            if (typeof response === 'string') return response;
+            if (response && typeof response.text === 'string') return response.text;
+            const content = response && response.message && response.message.content;
+            if (typeof content === 'string') return content;
+            if (Array.isArray(content)) {
+                return content.map((item) => item.text || item.content || '').join('');
+            }
+            return 'I received a response, but could not parse it. Please try rephrasing your question.';
+        }
+
+        async function handleQuestion(question) {
+            const trimmed = question.trim();
+            if (!trimmed) return;
+            addMessage('user', trimmed);
+            input.value = '';
+            setBusy(true, 'Reading relevant papers with Gemini...');
+
+            try {
+                const answer = await askGemini(trimmed);
+                addMessage('assistant', answer);
+                history.push({ role: 'user', content: trimmed });
+                history.push({ role: 'assistant', content: answer });
+                setBusy(false, 'Ready for another paper question');
+            } catch (error) {
+                addMessage('assistant', `I could not reach Gemini through Puter.js just now. ${error.message || error}`);
+                setBusy(false, 'Gemini/Puter connection issue');
+            }
+        }
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            handleQuestion(input.value);
+        });
+
+        input.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                form.requestSubmit();
+            }
+        });
+
+        promptButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                input.value = button.dataset.paperPrompt;
+                input.focus();
+            });
+        });
     })();
     </script>
 

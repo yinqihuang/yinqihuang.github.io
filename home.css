@@ -166,6 +166,186 @@ b {
   transform: translateY(-1px);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.paper-chatbox {
+  width: min(100%, 285px);
+  margin: 24px auto 0;
+  padding: 16px;
+  text-align: left;
+  border: 1px solid rgba(94, 134, 214, 0.22);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(230, 241, 74, 0.36) 0 24px, transparent 25px),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(218, 225, 246, 0.38));
+  box-shadow: 0 18px 45px rgba(94, 134, 214, 0.13);
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+.paper-chatbox-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.paper-chatbox-kicker {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5e86d6;
+}
+
+.paper-chatbox h2 {
+  margin: 2px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.1;
+  color: #333;
+}
+
+.paper-chatbox-dot {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #e6f14a;
+  box-shadow: -10px 10px 0 rgba(159, 98, 240, 0.26);
+}
+
+.paper-chat-status,
+.paper-chat-note {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: #6a6a75;
+}
+
+.paper-chat-messages {
+  display: grid;
+  gap: 8px;
+  max-height: 250px;
+  margin: 12px 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+
+.paper-chat-message {
+  padding: 9px 10px;
+  border-radius: 14px;
+  font-size: 0.78rem;
+  line-height: 1.42;
+  overflow-wrap: anywhere;
+}
+
+.paper-chat-message.assistant {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(94, 134, 214, 0.18);
+}
+
+.paper-chat-message.user {
+  background: rgba(230, 241, 74, 0.32);
+  border: 1px solid rgba(159, 98, 240, 0.18);
+  justify-self: end;
+}
+
+.paper-chat-message a {
+  color: #5e86d6;
+  font-weight: 700;
+}
+
+.paper-chat-prompts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.paper-chat-prompts button {
+  border: 1px solid rgba(94, 134, 214, 0.22);
+  border-radius: 999px;
+  padding: 5px 8px;
+  background: rgba(255, 255, 255, 0.68);
+  color: #555;
+  font: inherit;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.paper-chat-prompts button:hover,
+.paper-chat-prompts button:focus {
+  background: rgba(250, 233, 241, 0.78);
+}
+
+.paper-chat-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 7px;
+  align-items: end;
+}
+
+.paper-chat-form textarea {
+  min-height: 46px;
+  max-height: 110px;
+  resize: vertical;
+  border: 1px solid rgba(94, 134, 214, 0.25);
+  border-radius: 13px;
+  padding: 8px 9px;
+  background: rgba(255, 255, 255, 0.88);
+  font: inherit;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: #333;
+}
+
+.paper-chat-form button {
+  border: 0;
+  border-radius: 999px;
+  padding: 9px 12px;
+  background: #5e86d6;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.paper-chat-form button:hover,
+.paper-chat-form button:focus {
+  background: #9f62f0;
+  transform: translateY(-1px);
+}
+
+.paper-chat-form button:disabled {
+  cursor: wait;
+  opacity: 0.64;
+  transform: none;
+}
+
+.paper-chat-note {
+  margin-top: 8px;
+}
+
+.paper-chat-note code {
+  font-size: 0.7rem;
+}
+
 /* =========================
    NEWS BLOCK
    ========================= */
