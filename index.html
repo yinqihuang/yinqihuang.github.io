@@ -81,6 +81,63 @@
                 margin-bottom: 8px;
             }
         }
+
+        .roadmap-mobile-folders {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .sensory-map-stage {
+                overflow-x: auto !important;
+                overflow-y: visible !important;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            #sensoryCharacter {
+                min-width: 500px;
+                margin: 0 auto;
+            }
+
+            .roadmap-mobile-folders {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+                width: min(100%, 360px);
+                margin: 14px auto 0;
+                padding: 0 2px 6px;
+            }
+
+            .roadmap-mobile-folder {
+                border: 1px solid rgba(94, 134, 214, 0.24);
+                border-radius: 16px;
+                padding: 12px;
+                background: rgba(255, 255, 255, 0.78);
+                box-shadow: 0 10px 24px rgba(94, 134, 214, 0.12);
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .roadmap-mobile-folder h3 {
+                margin: 0 0 8px;
+                color: #333;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1rem;
+            }
+
+            .roadmap-mobile-folder a {
+                display: block;
+                margin-top: 6px;
+                color: #555;
+                font-size: 0.86rem;
+                line-height: 1.35;
+                text-decoration: none;
+            }
+
+            .roadmap-mobile-folder a:hover,
+            .roadmap-mobile-folder a:focus {
+                color: #5e86d6;
+                text-decoration: underline;
+            }
+        }
     </style>
 </head>
 
@@ -135,12 +192,12 @@
             <section class="paper-chatbox" aria-labelledby="paper-chat-title">
                 <div class="paper-chatbox-header">
                     <div>
-                        <div class="paper-chatbox-kicker">Paper Q&A</div>
-                        <h2 id="paper-chat-title">Ask my papers</h2>
+                        <div class="paper-chatbox-kicker">Paper assistant</div>
+                        <h2 id="paper-chat-title">Research assistant</h2>
                     </div>
                     <span class="paper-chatbox-dot" aria-hidden="true"></span>
                 </div>
-                <div class="paper-chat-status" id="paperChatStatus">Powered by Gemini via Puter.js</div>
+                <div class="paper-chat-status" id="paperChatStatus">Questions are sent to Puter’s AI service.</div>
                 <div class="paper-chat-messages" id="paperChatMessages" aria-live="polite">
                     <div class="paper-chat-message assistant">
                         Ask about methods, results, conclusions, data, or code. I will cite the relevant paper and link to the PDF or repository when available.
@@ -156,7 +213,7 @@
                     <textarea id="paperChatInput" rows="2" placeholder="Ask about a paper..." required></textarea>
                     <button type="submit" aria-label="Send paper question">Ask</button>
                 </form>
-                <p class="paper-chat-note">Uses local PDFs in <code>papers/</code>; visitors may be asked to sign in to Puter.</p>
+                <p class="paper-chat-note">Questions may require a free Puter sign-in. Do not submit private, medical, or confidential information.</p>
             </section>
         </aside>
 
@@ -388,6 +445,32 @@
       </g>
       <rect id="faceHit" x="344" y="810" width="58" height="55" rx="24" fill="transparent" pointer-events="all"/>
     </svg>
+                    <div class="roadmap-mobile-folders" aria-label="Research Roadmap folders for mobile">
+                        <article class="roadmap-mobile-folder">
+                            <h3>👁 Eyes</h3>
+                            <a href="#paper-vision-1">Future project</a>
+                            <a href="https://www.biorxiv.org/content/10.64898/2026.06.02.729319v1" target="_blank" rel="noopener">Closed-loop control based on visual feedback. Under review</a>
+                            <a href="https://doi.org/10.1016/j.neuropsychologia.2025.109351" target="_blank" rel="noopener">Landmark induced prediction error. Neuropsychologia (2025)</a>
+                        </article>
+                        <article class="roadmap-mobile-folder">
+                            <h3>🦶 Legs</h3>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0028393225002866" target="_blank" rel="noopener">Future project</a>
+                            <a href="https://doi.org/10.1016/j.neuropsychologia.2025.109351" target="_blank" rel="noopener">Straight-line distance estimation. Neuropsychologia (2025)</a>
+                            <a href="https://www.biorxiv.org/content/10.64898/2026.06.02.729319v1" target="_blank" rel="noopener">Angular distance estimation. Under review</a>
+                        </article>
+                        <article class="roadmap-mobile-folder">
+                            <h3>✋ Hands</h3>
+                            <a href="#paper-hand-1">Future project</a>
+                            <a href="papers/2026_Human_Teleoperation.pdf" target="_blank" rel="noopener">Teleoperation PDF</a>
+                            <a href="https://doi.org/10.1038/s41539-026-00442-6" target="_blank" rel="noopener">Teleoperation of surgical robots. npj Science of Learning (2026)</a>
+                        </article>
+                        <article class="roadmap-mobile-folder">
+                            <h3>👂 Ears</h3>
+                            <a href="#paper-auditory-1">Future project</a>
+                            <a href="#paper-auditory-2">Future project</a>
+                            <a href="#paper-auditory-3">Future project</a>
+                        </article>
+                    </div>
                 </div>
                 <script>
                 (function () {
