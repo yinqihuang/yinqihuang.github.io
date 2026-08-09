@@ -1532,6 +1532,12 @@
         if (!form || !input || !messages || !status) return;
 
         const history = [];
+        const geminiModels = [
+            'google/gemini-3.6-flash',
+            'google/gemini-3.5-flash',
+            'google/gemini-3.5-flash-lite',
+            'google/gemini-2.5-flash'
+        ];
 
         function escapeHtml(text) {
             return text
@@ -1612,6 +1618,7 @@
             const selected = selectPapers(question);
             const pdfCandidates = selected.filter((paper) => paper.pdf).slice(0, 2);
             const uploadedPaths = [];
+            let lastError = null;
 
             try {
                 for (const paper of pdfCandidates) {
@@ -1643,7 +1650,7 @@ Question: ${question}`;
                     ? [...fileParts, { type: 'text', text: prompt }]
                     : prompt;
 
-                const response = await puter.ai.chat([
+                const messagesWith = (userContent) => ([
                     {
                         role: 'system',
                         content: 'You answer questions about Yinqi Huang’s published papers using supplied PDFs and catalog metadata. Do not fabricate paper details, data links, or repository links.'
@@ -1651,15 +1658,39 @@ Question: ${question}`;
                     ...history.slice(-4),
                     {
                         role: 'user',
-                        content
+                        content: userContent
                     }
-                ], {
-                    model: 'google/gemini-3.6-flash',
-                    temperature: 0.2,
-                    max_tokens: 750
-                });
+                ]);
 
-                return extractResponseText(response);
+                for (const model of geminiModels) {
+                    try {
+                        const response = await puter.ai.chat(messagesWith(content), {
+                            model,
+                            temperature: 0.2,
+                            max_tokens: 750
+                        });
+                        return extractResponseText(response);
+                    } catch (error) {
+                        lastError = error;
+                        console.warn(`Gemini model failed with PDF context: ${model}`, error);
+                    }
+                }
+
+                for (const model of geminiModels) {
+                    try {
+                        const response = await puter.ai.chat(messagesWith(prompt), {
+                            model,
+                            temperature: 0.2,
+                            max_tokens: 750
+                        });
+                        return extractResponseText(response);
+                    } catch (error) {
+                        lastError = error;
+                        console.warn(`Gemini model failed with catalog context: ${model}`, error);
+                    }
+                }
+
+                throw lastError || new Error('Gemini is unavailable through Puter right now.');
             } finally {
                 for (const item of uploadedPaths) {
                     try {
@@ -1696,8 +1727,8 @@ Question: ${question}`;
                 history.push({ role: 'assistant', content: answer });
                 setBusy(false, 'Ready for another paper question');
             } catch (error) {
-                addMessage('assistant', `I could not reach Gemini through Puter.js just now. ${error.message || error}`);
-                setBusy(false, 'Gemini/Puter connection issue');
+                addMessage('assistant', `I could not reach Gemini right now. This usually means Puter’s Gemini provider is temporarily unavailable or the visitor needs to sign in to Puter. Please try again in a moment. Technical detail: ${error.message || error}`);
+                setBusy(false, 'Gemini connection issue');
             }
         }
 
