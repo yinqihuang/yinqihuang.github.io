@@ -19,7 +19,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/f5ea91e308.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://js.puter.com/v2/"></script>
+    <script>
+        window.paperAssistantPuterReady = (function () {
+            if (!/^https?:$/.test(window.location.protocol)) {
+                return Promise.reject(new Error('The paper assistant needs the page to be served through http:// or https://.'));
+            }
+
+            return new Promise(function (resolve, reject) {
+                var script = document.createElement('script');
+                script.src = 'https://js.puter.com/v2/';
+                script.async = true;
+                script.onload = function () { resolve(); };
+                script.onerror = function () { reject(new Error('Could not load Puter.js.')); };
+                document.head.appendChild(script);
+            });
+        })();
+    </script>
     <style>
         @media (min-width: 901px) {
             .profile-column {
@@ -362,6 +377,12 @@
 
                         <div class="news-container">
                             <div class="news-item">
+                                <div class="news-date">2026.10</div>
+                                <div class="news-content">
+                                    Our work <b>"Do Simulated Users Reveal Behaviorally Observable States During Human–LLM Joint Decision Making?"</b> accepted by <a href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/SocialAgent#tab-accept-poster" target="_blank" rel="noopener"><b>SocialAgent @ NeurIPS 2026</b></a>. See you in Atlanta!
+                                </div>
+                            </div>
+                            <div class="news-item">
                                 <div class="news-date">2026.09</div>
                                 <div class="news-content">
                                     Our work, <b>“Human Learning Dynamics During Teleoperation of Surgical Robots,”</b> has been accepted by <a href="https://utkauraslab.github.io/surgtwin-workshop.github.io/" target="_blank" rel="noopener"><b>SurgTwin @ IROS 2026</b></a>. See you in Pittsburgh!
@@ -371,12 +392,6 @@
                                 <div class="news-date">2026.08</div>
                                 <div class="news-content">
                                     Teaching my first in-person course <b>Engineering Psychology</b> at Georgia Tech!
-                                </div>
-                            </div>
-                            <div class="news-item">
-                                <div class="news-date">2026.07</div>
-                                <div class="news-content">
-                                    Navigation control theory talk accepted by <b>iNAV</b>. See you in Canada! 🫐
                                 </div>
                             </div>
                         </div>
@@ -1545,6 +1560,10 @@
             'google/gemini-2.5-flash'
         ];
 
+        if (!/^https?:$/.test(window.location.protocol)) {
+            status.textContent = 'Serve this page through localhost or GitHub Pages to use Gemini.';
+        }
+
         function escapeHtml(text) {
             return text
                 .replace(/&/g, '&amp;')
@@ -1617,6 +1636,8 @@
         }
 
         async function askGemini(question) {
+            await window.paperAssistantPuterReady;
+
             if (!window.puter || !puter.ai || !puter.ai.chat) {
                 throw new Error('Puter.js is not available yet. Please check the network connection and try again.');
             }
@@ -1733,7 +1754,7 @@ Question: ${question}`;
                 history.push({ role: 'assistant', content: answer });
                 setBusy(false, 'Ready for another paper question');
             } catch (error) {
-                addMessage('assistant', `I could not reach Gemini right now. This usually means Puter’s Gemini provider is temporarily unavailable or the visitor needs to sign in to Puter. Please try again in a moment. Technical detail: ${error.message || error}`);
+                addMessage('assistant', `I could not reach Gemini right now. If you opened this page as a file, preview it through a local server or GitHub Pages. Otherwise, Puter’s Gemini provider may be temporarily unavailable or may require sign-in. Technical detail: ${error.message || error}`);
                 setBusy(false, 'Gemini connection issue');
             }
         }
